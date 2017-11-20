@@ -24,16 +24,9 @@ Public Class Form1
                 Dim pad As String
                 pad = i.ToString("00")
                 Mins.Items.Add(pad)
-            Else
-                Mins.Items.Add(i)
-            End If
-        Next
-        For i = 0 To 59 Step 1
-            If i < 10 Then
-                Dim pad As String
-                pad = i.ToString("00")
                 Secs.Items.Add(pad)
             Else
+                Mins.Items.Add(i)
                 Secs.Items.Add(i)
             End If
         Next
