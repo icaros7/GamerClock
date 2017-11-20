@@ -152,7 +152,7 @@ Public Class Form1
             Me.WindowState = FormWindowState.Normal
             Me.Show()
             If Processs.Text = "_윈도우 종료하기_" Then
-                Shell("shutdown -s -t 5", AppWinStyle.Hide)
+                Shell("shutdown -s -f -t 5", AppWinStyle.Hide)
                 MsgBox("5초 이내 윈도우가 종료됩니다." + vbCrLf + "사용해 주셔서 감사합니다." + vbCrLf + vbCrLf + "메시지 : " + TextBox1.Text, vbInformation, "Gamer Clock for OSD")
             Else
                 Shell("taskkill -f -im " + Processs.Text, AppWinStyle.Hide)
