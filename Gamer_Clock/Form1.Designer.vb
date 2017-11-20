@@ -51,10 +51,12 @@ Partial Class Form1
         Me.Processs = New System.Windows.Forms.Label()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.App_Name = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Open_Form = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.Exit_Form = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Open_Form = New System.Windows.Forms.ToolStripMenuItem()
-        Me.App_Name = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AOC = New System.Windows.Forms.CheckBox()
+        Me.RTSSHook = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -224,7 +226,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(199, 447)
+        Me.Button1.Location = New System.Drawing.Point(195, 468)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(108, 31)
         Me.Button1.TabIndex = 5
@@ -236,15 +238,15 @@ Partial Class Form1
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(15, 52)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(106, 12)
+        Me.Label8.Size = New System.Drawing.Size(49, 12)
         Me.Label8.TabIndex = 5
-        Me.Label8.Text = "OSD 표기 메시지 :"
+        Me.Label8.Text = "메시지 :"
         '
         'CopyLeft
         '
         Me.CopyLeft.AutoSize = True
         Me.CopyLeft.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.CopyLeft.Location = New System.Drawing.Point(10, 453)
+        Me.CopyLeft.Location = New System.Drawing.Point(6, 474)
         Me.CopyLeft.Name = "CopyLeft"
         Me.CopyLeft.Size = New System.Drawing.Size(135, 17)
         Me.CopyLeft.TabIndex = 6
@@ -336,6 +338,20 @@ Partial Class Form1
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 76)
         '
+        'App_Name
+        '
+        Me.App_Name.Enabled = False
+        Me.App_Name.Name = "App_Name"
+        Me.App_Name.Size = New System.Drawing.Size(210, 22)
+        Me.App_Name.Text = "Gamer Clock for RTSS v1"
+        '
+        'Open_Form
+        '
+        Me.Open_Form.Name = "Open_Form"
+        Me.Open_Form.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.Open_Form.Size = New System.Drawing.Size(210, 22)
+        Me.Open_Form.Text = "보이기"
+        '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
@@ -348,25 +364,34 @@ Partial Class Form1
         Me.Exit_Form.Size = New System.Drawing.Size(210, 22)
         Me.Exit_Form.Text = "종료"
         '
-        'Open_Form
+        'AOC
         '
-        Me.Open_Form.Name = "Open_Form"
-        Me.Open_Form.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.Open_Form.Size = New System.Drawing.Size(210, 22)
-        Me.Open_Form.Text = "보이기"
+        Me.AOC.AutoSize = True
+        Me.AOC.Location = New System.Drawing.Point(9, 447)
+        Me.AOC.Name = "AOC"
+        Me.AOC.Size = New System.Drawing.Size(126, 16)
+        Me.AOC.TabIndex = 11
+        Me.AOC.Text = "Always-On-Clock"
+        Me.AOC.UseVisualStyleBackColor = True
         '
-        'App_Name
+        'RTSSHook
         '
-        Me.App_Name.Enabled = False
-        Me.App_Name.Name = "App_Name"
-        Me.App_Name.Size = New System.Drawing.Size(210, 22)
-        Me.App_Name.Text = "Gamer Clock for RTSS v1"
+        Me.RTSSHook.AutoSize = True
+        Me.RTSSHook.Enabled = False
+        Me.RTSSHook.Location = New System.Drawing.Point(139, 446)
+        Me.RTSSHook.Name = "RTSSHook"
+        Me.RTSSHook.Size = New System.Drawing.Size(170, 16)
+        Me.RTSSHook.TabIndex = 12
+        Me.RTSSHook.Text = "RTSS On-Screen-Display"
+        Me.RTSSHook.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(315, 487)
+        Me.ClientSize = New System.Drawing.Size(315, 532)
+        Me.Controls.Add(Me.RTSSHook)
+        Me.Controls.Add(Me.AOC)
         Me.Controls.Add(Me.Processs)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.ListBox1)
@@ -431,4 +456,6 @@ Partial Class Form1
     Friend WithEvents Exit_Form As ToolStripMenuItem
     Friend WithEvents Open_Form As ToolStripMenuItem
     Friend WithEvents App_Name As ToolStripMenuItem
+    Friend WithEvents AOC As CheckBox
+    Friend WithEvents RTSSHook As CheckBox
 End Class

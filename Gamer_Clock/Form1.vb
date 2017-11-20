@@ -60,7 +60,7 @@
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles CopyLeft.LinkClicked
-        Shell("explorer http://minnote.net")
+        Shell("explorer https://github.com/icaros7/GamerClock")
     End Sub
 
     Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
