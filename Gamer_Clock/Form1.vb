@@ -80,10 +80,16 @@
             NotifyIcon1.Visible = True
             NotifyIcon1.Icon = SystemIcons.Application
             NotifyIcon1.BalloonTipIcon = ToolTipIcon.Info
-            NotifyIcon1.BalloonTipTitle = "Gamer Clock"
-            NotifyIcon1.BalloonTipText = "Gamer Clock이 실행 중 입니다!"
+            NotifyIcon1.BalloonTipTitle = "Gamer Clock이 실행 중 입니다!" + vbCrLf + "종료 예정 시간 : " + Hours.Text + "시 " + Mins.Text + "분 " + Secs.Text + "초"
+            NotifyIcon1.BalloonTipText = "Gamer Clock이 실행 중 입니다!" + vbCrLf + "종료 예정 시간 : " + Hours.Text + "시 " + Mins.Text + "분 " + Secs.Text + "초"
             NotifyIcon1.ShowBalloonTip(50000)
             ShowInTaskbar = False
+        End If
+    End Sub
+
+    Private Sub Exit_Form_Click(sender As Object, e As EventArgs) Handles Exit_Form.Click
+        If MsgBox("Gamer Clock 을 종료 하시겠습니까?" + vbCrLf + "시계 기능이 종료됩니다!!", vbQuestion + vbYesNo, "종료") = vbYes Then
+            End
         End If
     End Sub
 End Class
