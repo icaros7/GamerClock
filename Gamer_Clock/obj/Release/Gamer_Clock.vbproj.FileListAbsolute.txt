@@ -1,0 +1,12 @@
+E:\VisualStudio\GamerClock\Gamer_Clock\bin\Release\Gamer_Clock.exe.config
+E:\VisualStudio\GamerClock\Gamer_Clock\bin\Release\Gamer_Clock.exe
+E:\VisualStudio\GamerClock\Gamer_Clock\bin\Release\Gamer_Clock.pdb
+E:\VisualStudio\GamerClock\Gamer_Clock\bin\Release\Gamer_Clock.xml
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.vbprojResolveAssemblyReference.cache
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.Form1.resources
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.Resources.resources
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.vbproj.GenerateResource.Cache
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.vbproj.CoreCompileInputs.cache
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.exe
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.xml
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.pdb
