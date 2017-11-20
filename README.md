@@ -5,7 +5,7 @@ It's a alarm clock for gamers.
 
 Features
 ---
-- RTSS OSD
+- RivaTuner Statistics Server OSD
 - Always-on-Clock
 - Force kill the target Process
 - Shutdown PC
