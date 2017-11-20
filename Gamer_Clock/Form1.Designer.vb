@@ -389,7 +389,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(315, 532)
+        Me.ClientSize = New System.Drawing.Size(315, 512)
         Me.Controls.Add(Me.RTSSHook)
         Me.Controls.Add(Me.AOC)
         Me.Controls.Add(Me.Processs)
@@ -415,6 +415,7 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gamer Clock v1 for Riva tunner"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

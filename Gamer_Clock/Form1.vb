@@ -80,8 +80,8 @@
             NotifyIcon1.Visible = True
             NotifyIcon1.Icon = SystemIcons.Application
             NotifyIcon1.BalloonTipIcon = ToolTipIcon.Info
-            NotifyIcon1.BalloonTipTitle = "Verificador corriendo"
-            NotifyIcon1.BalloonTipText = "Verificador corriendo"
+            NotifyIcon1.BalloonTipTitle = "Gamer Clock"
+            NotifyIcon1.BalloonTipText = "Gamer Clock이 실행 중 입니다!"
             NotifyIcon1.ShowBalloonTip(50000)
             ShowInTaskbar = False
         End If
