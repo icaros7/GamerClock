@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.ComponentModel
+
+Public Class Form1
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Hour.Text = DateTime.Now.ToString("HH")
@@ -7,6 +9,11 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If UBound(Diagnostics.Process.GetProcessesByName(Diagnostics.Process.GetCurrentProcess.ProcessName)) > 0 Then
+            MsgBox("Gamer Clock이 이미 실행중입니다!", vbExclamation, "오류")
+            End
+        End If
+        Me.Location = New Point(Screen.AllScreens(0).WorkingArea.Width / 2 - Me.Width / 2, Screen.AllScreens(0).WorkingArea.Height / 2 - Me.Height / 2)
         Hour.Text = DateTime.Now.ToString("HH")
         Min.Text = DateTime.Now.ToString("mm")
         Sec.Text = DateTime.Now.ToString("ss")
@@ -21,7 +28,16 @@
                 Mins.Items.Add(i)
             End If
         Next
-        Secs.Items.Add("00")
+        For i = 0 To 59 Step 1
+            If i < 10 Then
+                Dim pad As String
+                pad = i.ToString("00")
+                Secs.Items.Add(pad)
+            Else
+                Secs.Items.Add(i)
+            End If
+        Next
+        'Secs.Items.Add("00")
         If Not ListBox1.FindString("RTSS.exe") <> -1 Then
             MsgBox("RivaTuner Statistics Server가 감지되지 않습니다." + vbCrLf + "프로그램을 종료합니다.", vbCritical, "오류")
             End
@@ -37,7 +53,7 @@
             MsgBox("종료할 프로세스를 선택해주세요!!", vbCritical, "오류")
         Else
 
-            If MsgBox("선택한 프로세스 : " + Processs.Text + vbCrLf + "종료 예정 시간 : " + Hours.Text + "시 " + Mins.Text + "분 " + Secs.Text + "초" + vbCrLf + vbCrLf + "맞냐?", vbQuestion + vbYesNo, "확인") = vbYes Then
+            If MsgBox("선택한 프로세스 : " + Processs.Text + vbCrLf + "종료 예정 시간 : " + Hours.Text + "시 " + Mins.Text + "분 " + Secs.Text + "초" + vbCrLf + "메시지 : " + TextBox1.Text + vbCrLf + vbCrLf + "모든 것이 정확한가요?", vbQuestion + vbYesNo, "확인") = vbYes Then
                 Me.WindowState = FormWindowState.Minimized
                 Timer2.Enabled = True
             End If
@@ -56,13 +72,17 @@
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
-        Processs.Text = ListBox1.SelectedItem
+        If ListBox1.SelectedItem = "_더블클릭 시 새로고침_" Then
+            Processs.Text = "종료할 프로세스를 선택"
+        Else
+            Processs.Text = ListBox1.SelectedItem
+        End If
     End Sub
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         If Me.WindowState = FormWindowState.Minimized Then
             NotifyIcon1.Visible = True
-            NotifyIcon1.Icon = SystemIcons.Application
+            NotifyIcon1.Icon = Me.Icon
             NotifyIcon1.BalloonTipIcon = ToolTipIcon.Info
             NotifyIcon1.BalloonTipTitle = "Gamer Clock"
             NotifyIcon1.BalloonTipText = "Gamer Clock이 실행 중 입니다!" + vbCrLf + "종료 예정 시간 : " + Hours.Text + "시 " + Mins.Text + "분 " + Secs.Text + "초"
@@ -80,6 +100,7 @@
     Private Sub Open_Form_Click(sender As Object, e As EventArgs) Handles Open_Form.Click
         If MsgBox("알림 기능을 중지하고, 메인화면으로 돌아가시겠습니까?", vbQuestion + vbYesNo, "보이기") = vbYes Then
             Me.WindowState = FormWindowState.Normal
+            Timer2.Enabled = False
         End If
     End Sub
 
@@ -129,8 +150,14 @@
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         If (Hour.Text = Hours.Text) And (Min.Text = Mins.Text) And (Sec.Text = Secs.Text) Then
             Me.WindowState = FormWindowState.Normal
-            MsgBox("ok")
-            Shell("taskkill -f -im " + Processs.Text, AppWinStyle.Hide)
+            Me.Show()
+            If Processs.Text = "_윈도우 종료하기_" Then
+                Shell("shutdown -s -t 5", AppWinStyle.Hide)
+                MsgBox("5초 이내 윈도우가 종료됩니다." + vbCrLf + "사용해 주셔서 감사합니다." + vbCrLf + vbCrLf + "메시지 : " + TextBox1.Text, vbInformation, "Gamer Clock for OSD")
+            Else
+                Shell("taskkill -f -im " + Processs.Text, AppWinStyle.Hide)
+                MsgBox("지정하신 시간이 다 되어 " + Processs.Text + "가 종료되었습니다." + vbCrLf + vbCrLf + "메시지 : " + TextBox1.Text, vbInformation, "안내")
+            End If
             Timer2.Enabled = False
         End If
     End Sub
@@ -139,7 +166,7 @@
         ListBox1.Items.Clear()
         ListBox2.Items.Clear()
         ListBox1.Items.Add("_더블클릭 시 새로고침_")
-        ListBox2.Items.Add("_더블클릭 시 새로고침_")
+        ListBox1.Items.Add("_윈도우 종료하기_")
         For Each OneProcess As Process In Process.GetProcesses
             ListBox1.Items.Add(OneProcess.ProcessName + ".exe")
             ListBox2.Items.Add(OneProcess.ProcessName + ".exe")
@@ -164,5 +191,9 @@
         If e.KeyCode = Keys.Return Then
             Button2_Click(sender, New System.EventArgs())
         End If
+    End Sub
+
+    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        End
     End Sub
 End Class

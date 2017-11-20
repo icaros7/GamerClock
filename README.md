@@ -9,3 +9,9 @@ Features
 - Always-on-Clock
 - Force kill the target Process
 - Shutdown PC
+
+
+Support
+---
+Website : http://minnote.net  
+Email : hominlab@gmail.com

@@ -211,7 +211,6 @@ Partial Class Form1
         'Secs
         '
         Me.Secs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Secs.Enabled = False
         Me.Secs.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Secs.FormattingEnabled = True
         Me.Secs.ImeMode = System.Windows.Forms.ImeMode.Off
@@ -234,7 +233,7 @@ Partial Class Form1
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(5)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(5)
-        Me.GroupBox1.Size = New System.Drawing.Size(456, 117)
+        Me.GroupBox1.Size = New System.Drawing.Size(464, 117)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "종료 예정 시간"
@@ -244,15 +243,16 @@ Partial Class Form1
         Me.TextBox1.Location = New System.Drawing.Point(22, 122)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(5)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(453, 32)
+        Me.TextBox1.Size = New System.Drawing.Size(464, 32)
         Me.TextBox1.TabIndex = 4
+        Me.TextBox1.Text = "Powered by hominlab@gmail.com"
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(309, 861)
         Me.Button1.Margin = New System.Windows.Forms.Padding(5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(170, 54)
+        Me.Button1.Size = New System.Drawing.Size(177, 54)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "시작"
         Me.Button1.UseVisualStyleBackColor = True
@@ -329,10 +329,10 @@ Partial Class Form1
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 21
-        Me.ListBox1.Location = New System.Drawing.Point(17, 429)
+        Me.ListBox1.Location = New System.Drawing.Point(17, 393)
         Me.ListBox1.Margin = New System.Windows.Forms.Padding(5)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(461, 382)
+        Me.ListBox1.Size = New System.Drawing.Size(469, 382)
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 8
         '
@@ -424,7 +424,7 @@ Partial Class Form1
         '
         'search
         '
-        Me.search.Location = New System.Drawing.Point(183, 389)
+        Me.search.Location = New System.Drawing.Point(180, 783)
         Me.search.Name = "search"
         Me.search.Size = New System.Drawing.Size(206, 32)
         Me.search.TabIndex = 13
@@ -432,7 +432,7 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(18, 397)
+        Me.Label10.Location = New System.Drawing.Point(15, 791)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(164, 21)
         Me.Label10.TabIndex = 14
@@ -440,9 +440,9 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(396, 387)
+        Me.Button2.Location = New System.Drawing.Point(393, 781)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(82, 33)
+        Me.Button2.Size = New System.Drawing.Size(94, 33)
         Me.Button2.TabIndex = 15
         Me.Button2.Text = "검색"
         Me.Button2.UseVisualStyleBackColor = True
@@ -494,7 +494,7 @@ Partial Class Form1
         Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Gamer Clock v1 for Riva tunner"
+        Me.Text = "Gamer Clock for OSD"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ContextMenuStrip1.ResumeLayout(False)
