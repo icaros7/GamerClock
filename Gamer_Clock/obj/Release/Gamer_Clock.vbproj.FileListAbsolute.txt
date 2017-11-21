@@ -10,3 +10,16 @@ E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.vbproj.CoreCompil
 E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.exe
 E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.xml
 E:\VisualStudio\GamerClock\Gamer_Clock\obj\Release\Gamer_Clock.pdb
+G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Release\Gamer_Clock.exe.config
+G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Release\Gamer_Clock.exe
+G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Release\Gamer_Clock.pdb
+G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Release\Gamer_Clock.xml
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.vbprojResolveAssemblyReference.cache
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.Form1.resources
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.Resources.resources
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.vbproj.GenerateResource.Cache
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.vbproj.CoreCompileInputs.cache
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.exe
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.xml
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.pdb
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.Form2.resources

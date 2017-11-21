@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' 어셈블리 특성 값을 검토합니다.
 
-<Assembly: AssemblyTitle("Gamer_Clock")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Gamer_Clock")>
-<Assembly: AssemblyCopyright("Copyright ©  2017")>
+<Assembly: AssemblyTitle("Gamer Clock for OSD")>
+<Assembly: AssemblyDescription("Gamer Clock for On-Screen-Display")>
+<Assembly: AssemblyCompany("hominlab")>
+<Assembly: AssemblyProduct("Gamer Clock for OSD")>
+<Assembly: AssemblyCopyright("Copyleft © hominlab@gmail.com.")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

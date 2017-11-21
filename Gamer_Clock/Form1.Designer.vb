@@ -63,6 +63,7 @@ Partial Class Form1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -71,10 +72,9 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("맑은 고딕", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label1.Location = New System.Drawing.Point(19, 16)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(204, 50)
+        Me.Label1.Size = New System.Drawing.Size(116, 30)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "현재 시각 :"
         '
@@ -82,10 +82,9 @@ Partial Class Form1
         '
         Me.Hour.AutoSize = True
         Me.Hour.Font = New System.Drawing.Font("맑은 고딕", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Hour.Location = New System.Drawing.Point(200, 16)
-        Me.Hour.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Hour.Location = New System.Drawing.Point(127, 9)
         Me.Hour.Name = "Hour"
-        Me.Hour.Size = New System.Drawing.Size(73, 57)
+        Me.Hour.Size = New System.Drawing.Size(43, 32)
         Me.Hour.TabIndex = 1
         Me.Hour.Text = "00"
         '
@@ -98,10 +97,9 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label2.Location = New System.Drawing.Point(255, 35)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label2.Location = New System.Drawing.Point(162, 20)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 31)
+        Me.Label2.Size = New System.Drawing.Size(21, 17)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "시"
         '
@@ -109,10 +107,9 @@ Partial Class Form1
         '
         Me.Min.AutoSize = True
         Me.Min.Font = New System.Drawing.Font("맑은 고딕", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Min.Location = New System.Drawing.Point(297, 16)
-        Me.Min.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Min.Location = New System.Drawing.Point(189, 9)
         Me.Min.Name = "Min"
-        Me.Min.Size = New System.Drawing.Size(73, 57)
+        Me.Min.Size = New System.Drawing.Size(43, 32)
         Me.Min.TabIndex = 1
         Me.Min.Text = "00"
         '
@@ -120,10 +117,9 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label4.Location = New System.Drawing.Point(352, 35)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label4.Location = New System.Drawing.Point(224, 20)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(37, 31)
+        Me.Label4.Size = New System.Drawing.Size(21, 17)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "분"
         '
@@ -131,10 +127,9 @@ Partial Class Form1
         '
         Me.Sec.AutoSize = True
         Me.Sec.Font = New System.Drawing.Font("맑은 고딕", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Sec.Location = New System.Drawing.Point(394, 16)
-        Me.Sec.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Sec.Location = New System.Drawing.Point(251, 9)
         Me.Sec.Name = "Sec"
-        Me.Sec.Size = New System.Drawing.Size(73, 57)
+        Me.Sec.Size = New System.Drawing.Size(43, 32)
         Me.Sec.TabIndex = 1
         Me.Sec.Text = "00"
         '
@@ -142,10 +137,9 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label6.Location = New System.Drawing.Point(449, 35)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label6.Location = New System.Drawing.Point(286, 20)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(37, 31)
+        Me.Label6.Size = New System.Drawing.Size(21, 17)
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "초"
         '
@@ -153,10 +147,9 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label3.Location = New System.Drawing.Point(129, 46)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label3.Location = New System.Drawing.Point(82, 26)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(37, 31)
+        Me.Label3.Size = New System.Drawing.Size(21, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "시"
         '
@@ -167,10 +160,9 @@ Partial Class Form1
         Me.Hours.FormattingEnabled = True
         Me.Hours.ImeMode = System.Windows.Forms.ImeMode.Off
         Me.Hours.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"})
-        Me.Hours.Location = New System.Drawing.Point(57, 35)
-        Me.Hours.Margin = New System.Windows.Forms.Padding(5)
+        Me.Hours.Location = New System.Drawing.Point(36, 20)
         Me.Hours.Name = "Hours"
-        Me.Hours.Size = New System.Drawing.Size(70, 44)
+        Me.Hours.Size = New System.Drawing.Size(46, 28)
         Me.Hours.Sorted = True
         Me.Hours.TabIndex = 3
         '
@@ -178,10 +170,9 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label5.Location = New System.Drawing.Point(244, 46)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label5.Location = New System.Drawing.Point(155, 26)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 31)
+        Me.Label5.Size = New System.Drawing.Size(21, 17)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "분"
         '
@@ -191,20 +182,18 @@ Partial Class Form1
         Me.Mins.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Mins.FormattingEnabled = True
         Me.Mins.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.Mins.Location = New System.Drawing.Point(171, 35)
-        Me.Mins.Margin = New System.Windows.Forms.Padding(5)
+        Me.Mins.Location = New System.Drawing.Point(109, 20)
         Me.Mins.Name = "Mins"
-        Me.Mins.Size = New System.Drawing.Size(70, 44)
+        Me.Mins.Size = New System.Drawing.Size(46, 28)
         Me.Mins.TabIndex = 3
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label7.Location = New System.Drawing.Point(358, 46)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label7.Location = New System.Drawing.Point(228, 26)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 31)
+        Me.Label7.Size = New System.Drawing.Size(21, 17)
         Me.Label7.TabIndex = 2
         Me.Label7.Text = "초"
         '
@@ -214,10 +203,9 @@ Partial Class Form1
         Me.Secs.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Secs.FormattingEnabled = True
         Me.Secs.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.Secs.Location = New System.Drawing.Point(286, 35)
-        Me.Secs.Margin = New System.Windows.Forms.Padding(5)
+        Me.Secs.Location = New System.Drawing.Point(182, 20)
         Me.Secs.Name = "Secs"
-        Me.Secs.Size = New System.Drawing.Size(70, 44)
+        Me.Secs.Size = New System.Drawing.Size(46, 28)
         Me.Secs.Sorted = True
         Me.Secs.TabIndex = 3
         '
@@ -229,30 +217,25 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Hours)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Location = New System.Drawing.Point(22, 217)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(5)
+        Me.GroupBox1.Location = New System.Drawing.Point(14, 124)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(5)
-        Me.GroupBox1.Size = New System.Drawing.Size(464, 117)
+        Me.GroupBox1.Size = New System.Drawing.Size(295, 67)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "종료 예정 시간"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(22, 122)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(5)
+        Me.TextBox1.Location = New System.Drawing.Point(14, 70)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(464, 32)
+        Me.TextBox1.Size = New System.Drawing.Size(297, 21)
         Me.TextBox1.TabIndex = 4
-        Me.TextBox1.Text = "Powered by hominlab@gmail.com"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(309, 861)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button1.Location = New System.Drawing.Point(197, 492)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(177, 54)
+        Me.Button1.Size = New System.Drawing.Size(113, 31)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "시작"
         Me.Button1.UseVisualStyleBackColor = True
@@ -260,10 +243,9 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(24, 91)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label8.Location = New System.Drawing.Point(15, 52)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(87, 21)
+        Me.Label8.Size = New System.Drawing.Size(49, 12)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "메시지 :"
         '
@@ -271,10 +253,9 @@ Partial Class Form1
         '
         Me.CopyLeft.AutoSize = True
         Me.CopyLeft.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.CopyLeft.Location = New System.Drawing.Point(12, 872)
-        Me.CopyLeft.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.CopyLeft.Location = New System.Drawing.Point(8, 498)
         Me.CopyLeft.Name = "CopyLeft"
-        Me.CopyLeft.Size = New System.Drawing.Size(238, 31)
+        Me.CopyLeft.Size = New System.Drawing.Size(135, 17)
         Me.CopyLeft.TabIndex = 6
         Me.CopyLeft.TabStop = True
         Me.CopyLeft.Text = "Copyleft ⓒ hominlab"
@@ -282,10 +263,9 @@ Partial Class Form1
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(19, 178)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(5)
+        Me.RadioButton1.Location = New System.Drawing.Point(12, 102)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(106, 25)
+        Me.RadioButton1.Size = New System.Drawing.Size(63, 16)
         Me.RadioButton1.TabIndex = 7
         Me.RadioButton1.Text = "30분 뒤"
         Me.RadioButton1.UseVisualStyleBackColor = True
@@ -293,10 +273,9 @@ Partial Class Form1
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(137, 178)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(5)
+        Me.RadioButton2.Location = New System.Drawing.Point(87, 102)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(116, 25)
+        Me.RadioButton2.Size = New System.Drawing.Size(69, 16)
         Me.RadioButton2.TabIndex = 7
         Me.RadioButton2.Text = "1시간 뒤"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -304,10 +283,9 @@ Partial Class Form1
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(255, 178)
-        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(5)
+        Me.RadioButton3.Location = New System.Drawing.Point(162, 102)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(116, 25)
+        Me.RadioButton3.Size = New System.Drawing.Size(69, 16)
         Me.RadioButton3.TabIndex = 7
         Me.RadioButton3.Text = "2시간 뒤"
         Me.RadioButton3.UseVisualStyleBackColor = True
@@ -316,10 +294,9 @@ Partial Class Form1
         '
         Me.RadioButton4.AutoSize = True
         Me.RadioButton4.Checked = True
-        Me.RadioButton4.Location = New System.Drawing.Point(372, 178)
-        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(5)
+        Me.RadioButton4.Location = New System.Drawing.Point(237, 102)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(98, 25)
+        Me.RadioButton4.Size = New System.Drawing.Size(59, 16)
         Me.RadioButton4.TabIndex = 7
         Me.RadioButton4.TabStop = True
         Me.RadioButton4.Text = "커스텀"
@@ -328,31 +305,28 @@ Partial Class Form1
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 21
-        Me.ListBox1.Location = New System.Drawing.Point(17, 393)
-        Me.ListBox1.Margin = New System.Windows.Forms.Padding(5)
+        Me.ListBox1.ItemHeight = 12
+        Me.ListBox1.Location = New System.Drawing.Point(11, 225)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(469, 382)
+        Me.ListBox1.Size = New System.Drawing.Size(300, 220)
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 8
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(16, 360)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label9.Location = New System.Drawing.Point(10, 206)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(185, 21)
+        Me.Label9.Size = New System.Drawing.Size(105, 12)
         Me.Label9.TabIndex = 9
         Me.Label9.Text = "선택된 프로세스 : "
         '
         'Processs
         '
         Me.Processs.AutoSize = True
-        Me.Processs.Location = New System.Drawing.Point(190, 360)
-        Me.Processs.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Processs.Location = New System.Drawing.Point(121, 206)
         Me.Processs.Name = "Processs"
-        Me.Processs.Size = New System.Drawing.Size(234, 21)
+        Me.Processs.Size = New System.Drawing.Size(133, 12)
         Me.Processs.TabIndex = 10
         Me.Processs.Text = "종료할 프로세스를 선택"
         '
@@ -367,41 +341,40 @@ Partial Class Form1
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(28, 28)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.App_Name, Me.Open_Form, Me.ToolStripSeparator1, Me.Exit_Form})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(324, 112)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 76)
         '
         'App_Name
         '
         Me.App_Name.Enabled = False
         Me.App_Name.Name = "App_Name"
-        Me.App_Name.Size = New System.Drawing.Size(323, 34)
+        Me.App_Name.Size = New System.Drawing.Size(210, 22)
         Me.App_Name.Text = "Gamer Clock for RTSS v1"
         '
         'Open_Form
         '
         Me.Open_Form.Name = "Open_Form"
         Me.Open_Form.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.Open_Form.Size = New System.Drawing.Size(323, 34)
+        Me.Open_Form.Size = New System.Drawing.Size(210, 22)
         Me.Open_Form.Text = "보이기"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(320, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(207, 6)
         '
         'Exit_Form
         '
         Me.Exit_Form.Name = "Exit_Form"
         Me.Exit_Form.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.Exit_Form.Size = New System.Drawing.Size(323, 34)
+        Me.Exit_Form.Size = New System.Drawing.Size(210, 22)
         Me.Exit_Form.Text = "종료"
         '
         'AOC
         '
         Me.AOC.AutoSize = True
-        Me.AOC.Location = New System.Drawing.Point(17, 824)
-        Me.AOC.Margin = New System.Windows.Forms.Padding(5)
+        Me.AOC.Location = New System.Drawing.Point(11, 471)
         Me.AOC.Name = "AOC"
-        Me.AOC.Size = New System.Drawing.Size(189, 25)
+        Me.AOC.Size = New System.Drawing.Size(126, 16)
         Me.AOC.TabIndex = 11
         Me.AOC.Text = "Always-On-Clock"
         Me.AOC.UseVisualStyleBackColor = True
@@ -410,10 +383,9 @@ Partial Class Form1
         '
         Me.RTSSHook.AutoSize = True
         Me.RTSSHook.Enabled = False
-        Me.RTSSHook.Location = New System.Drawing.Point(221, 822)
-        Me.RTSSHook.Margin = New System.Windows.Forms.Padding(5)
+        Me.RTSSHook.Location = New System.Drawing.Point(141, 470)
         Me.RTSSHook.Name = "RTSSHook"
-        Me.RTSSHook.Size = New System.Drawing.Size(261, 25)
+        Me.RTSSHook.Size = New System.Drawing.Size(170, 16)
         Me.RTSSHook.TabIndex = 12
         Me.RTSSHook.Text = "RTSS On-Screen-Display"
         Me.RTSSHook.UseVisualStyleBackColor = True
@@ -424,25 +396,28 @@ Partial Class Form1
         '
         'search
         '
-        Me.search.Location = New System.Drawing.Point(180, 783)
+        Me.search.Location = New System.Drawing.Point(115, 447)
+        Me.search.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.search.Name = "search"
-        Me.search.Size = New System.Drawing.Size(206, 32)
+        Me.search.Size = New System.Drawing.Size(133, 21)
         Me.search.TabIndex = 13
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(15, 791)
+        Me.Label10.Location = New System.Drawing.Point(10, 452)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(164, 21)
+        Me.Label10.Size = New System.Drawing.Size(93, 12)
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "프로세스 검색 : "
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(393, 781)
+        Me.Button2.Location = New System.Drawing.Point(250, 446)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 33)
+        Me.Button2.Size = New System.Drawing.Size(60, 19)
         Me.Button2.TabIndex = 15
         Me.Button2.Text = "검색"
         Me.Button2.UseVisualStyleBackColor = True
@@ -450,18 +425,29 @@ Partial Class Form1
         'ListBox2
         '
         Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.ItemHeight = 21
-        Me.ListBox2.Location = New System.Drawing.Point(709, 409)
+        Me.ListBox2.ItemHeight = 12
+        Me.ListBox2.Location = New System.Drawing.Point(451, 234)
+        Me.ListBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(300, 130)
+        Me.ListBox2.Size = New System.Drawing.Size(192, 76)
         Me.ListBox2.Sorted = True
         Me.ListBox2.TabIndex = 16
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(149, 492)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(42, 31)
+        Me.Button3.TabIndex = 17
+        Me.Button3.Text = "옵션"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(499, 937)
+        Me.ClientSize = New System.Drawing.Size(318, 535)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label10)
@@ -489,11 +475,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Gamer Clock for OSD"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -542,4 +527,5 @@ Partial Class Form1
     Friend WithEvents Label10 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents ListBox2 As ListBox
+    Friend WithEvents Button3 As Button
 End Class

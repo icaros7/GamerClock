@@ -13,7 +13,7 @@ Public Class Form1
             MsgBox("Gamer Clock이 이미 실행중입니다!", vbExclamation, "오류")
             End
         End If
-        Me.Location = New Point(Screen.AllScreens(0).WorkingArea.Width / 2 - Me.Width / 2, Screen.AllScreens(0).WorkingArea.Height / 2 - Me.Height / 2)
+        Me.Location = Screen.AllScreens(My.Settings.Main_Monitor - 1).Bounds.Location + New Point(Screen.AllScreens(My.Settings.Main_Monitor - 1).WorkingArea.Width / 2 - Me.Width / 2, Screen.AllScreens(My.Settings.Main_Monitor - 1).WorkingArea.Height / 2 - Me.Height / 2)
         Hour.Text = DateTime.Now.ToString("HH")
         Min.Text = DateTime.Now.ToString("mm")
         Sec.Text = DateTime.Now.ToString("ss")
@@ -36,9 +36,18 @@ Public Class Form1
             End
         End If
         Hours.SelectedItem = DateTime.Now.ToString("HH")
-        Mins.SelectedIndex = Val(DateTime.Now.ToString("mm"))
+        If DateTime.Now.ToString("mm") = 59 Then
+            Mins.SelectedIndex = 0
+            Hours.SelectedIndex += 1
+        Else
+            Mins.SelectedIndex = Val(DateTime.Now.ToString("mm")) + 1
+        End If
         Secs.SelectedIndex = 0
-
+        TextBox1.Text = My.Settings.Save_Msg
+        If My.Settings.Auto_Search_config = True Then
+            search.Text = My.Settings.Auto_Search
+            Button2_Click(sender, New System.EventArgs())
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -101,8 +110,7 @@ Public Class Form1
         Label1_Click(sender, New System.EventArgs())
         Dim _30min As Int32
         Dim tmp As Int32
-        Dim hr As Int32
-        hr = 0
+        Dim hr As Int32 = 0
         _30min = Val(Date.Now.ToString("mm")) + 30
         If _30min > 59 Then
             Do
@@ -188,5 +196,9 @@ Public Class Form1
 
     Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         End
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Form2.ShowDialog()
     End Sub
 End Class
