@@ -119,6 +119,7 @@ Public Class Form2
         Dim CurrentVersion As String = Application.ProductVersion
         If LastVersion = CurrentVersion Then
             MsgBox("최신버전의 Gamer Clock for OSD 를 실행중 입니다!", vbInformation, "안내")
+            Exit Sub
         Else
 
             If MsgBox("새로운 업데이트가 있습니다. 설치 하시겠습니까?" + vbCrLf + vbCrLf + "설치된 버전 : " + CurrentVersion + vbCrLf + "최신 버전 : " + LastVersion, vbQuestion + vbYesNo, "업데이트") = vbYes Then
@@ -127,6 +128,7 @@ Public Class Form2
                 Shell(Application.StartupPath + "\Gamer_Clock_Update.bat", AppWinStyle.NormalFocus)
             Else
                 MsgBox("가급적 최신 버전 사용을 권장합니다.", vbCritical, "안내")
+                Exit Sub
             End If
         End If
 
