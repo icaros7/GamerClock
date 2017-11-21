@@ -2,7 +2,6 @@ G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.exe.config
 G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.exe
 G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.pdb
 G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.xml
-G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.vbprojResolveAssemblyReference.cache
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Form1.resources
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Resources.resources
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.vbproj.GenerateResource.Cache

@@ -22,3 +22,4 @@ G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.exe
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.xml
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.pdb
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.Form2.resources
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.vbprojResolveAssemblyReference.cache
