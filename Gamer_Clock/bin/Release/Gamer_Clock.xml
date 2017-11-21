@@ -22,10 +22,5 @@ Gamer_Clock
   속성을 재정의합니다.
 </summary>
 </member>
-<member name="P:Gamer_Clock.My.Resources.Resources.Main_Monitor">
-<summary>
-  1과(와) 유사한 지역화된 문자열을 찾습니다.
-</summary>
-</member>
 </members>
 </doc>
