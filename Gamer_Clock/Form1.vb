@@ -53,6 +53,7 @@ Public Class Form1
             search.Text = My.Settings.Auto_Search
             Button2_Click(sender, New System.EventArgs())
         End If
+        ListBox1.SelectedIndex = 0
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
