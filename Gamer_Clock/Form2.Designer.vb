@@ -36,6 +36,7 @@ Partial Class Form2
         Me.Auto_Search_input = New System.Windows.Forms.LinkLabel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'MultiMonitor_check
@@ -170,11 +171,21 @@ Partial Class Form2
         Me.Button1.Text = "업데이트"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(379, 79)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(61, 21)
+        Me.TextBox1.TabIndex = 15
+        Me.TextBox1.Text = "powershell ""(new-object Net.WebClient).DownloadFile('https://icaros7.github.io/Ga" &
+    "merClock/Update.bat', './Gamer_Clock_Update.bat')"""
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 290)
+        Me.ClientSize = New System.Drawing.Size(280, 290)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Auto_Search_input)
@@ -212,4 +223,5 @@ Partial Class Form2
     Friend WithEvents Auto_Search_input As LinkLabel
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
