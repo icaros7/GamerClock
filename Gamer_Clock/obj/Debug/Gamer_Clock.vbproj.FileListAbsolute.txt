@@ -22,3 +22,4 @@ E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.exe
 E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.xml
 E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.pdb
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Form2.resources
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Form3.resources

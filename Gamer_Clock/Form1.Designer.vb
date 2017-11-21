@@ -397,7 +397,7 @@ Partial Class Form1
         'search
         '
         Me.search.Location = New System.Drawing.Point(115, 447)
-        Me.search.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.search.Margin = New System.Windows.Forms.Padding(2)
         Me.search.Name = "search"
         Me.search.Size = New System.Drawing.Size(133, 21)
         Me.search.TabIndex = 13
@@ -415,7 +415,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(250, 446)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(60, 19)
         Me.Button2.TabIndex = 15
@@ -427,7 +427,7 @@ Partial Class Form1
         Me.ListBox2.FormattingEnabled = True
         Me.ListBox2.ItemHeight = 12
         Me.ListBox2.Location = New System.Drawing.Point(451, 234)
-        Me.ListBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ListBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.ListBox2.Name = "ListBox2"
         Me.ListBox2.Size = New System.Drawing.Size(192, 76)
         Me.ListBox2.Sorted = True
