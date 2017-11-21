@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.IO.File
 
 Public Class Form1
 
@@ -9,6 +10,10 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If My.Computer.FileSystem.FileExists(Application.StartupPath + "\Gamer_Clock_Update.bat") Then
+            Shell("taskkill -f -im Gamer_Clock_Update.bat", AppWinStyle.Hide)
+            My.Computer.FileSystem.DeleteFile(Application.StartupPath + "\Gamer_Clock_Update.bat")
+        End If
         If UBound(Diagnostics.Process.GetProcessesByName(Diagnostics.Process.GetCurrentProcess.ProcessName)) > 0 Then
             MsgBox("Gamer Clock이 이미 실행중입니다!", vbExclamation, "오류")
             End
