@@ -1,0 +1,6 @@
+; VCE.def : Declares the module parameters for the DLL.
+
+LIBRARY      "VCE"
+DESCRIPTION  'VCE Windows Dynamic Link Library'
+
+EXPORTS

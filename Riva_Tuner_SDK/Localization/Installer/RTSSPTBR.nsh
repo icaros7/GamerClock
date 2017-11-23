@@ -1,0 +1,13 @@
+LicenseLangString RTSSLicense 	${LANG_PORTUGUESEBR}	"RTSSPTBR.lic"
+
+LangString RTSSActiveInstall 	${LANG_PORTUGUESEBR} 	"O RivaTuner Statistics Server está atualmente em execução, o processo de instalação será abortado!"
+LangString RTSSAbortInstall 	${LANG_PORTUGUESEBR} 	"A instalação do RivaTuner Statistics Server falhou!"
+LangString RTSSActiveUninstall 	${LANG_PORTUGUESEBR}	"O RivaTuner Statistics Server está atualmente em execução, o processo de desinstalação será abortado!"
+LangString RTSSKeepSettings 	${LANG_PORTUGUESEBR} 	"Você deseja manter suas configurações do RivaTuner Statistics Server? Responda SIM se você estiver desinstalando o programa antes de atualizar para a versão mais recente."
+LangString RTSSRebootUninstall 	${LANG_PORTUGUESEBR}	 "Alguns arquivos do RivaTuner Statistics Server estão atualmente em uso e não podem ser removidos agora, você deve reiniciar o computador para remover esses arquivos e concluir a desinstalação. Deseja reiniciar agora?"
+LangString RTSSAbortUninstall 	${LANG_PORTUGUESEBR} 	 "A desinstalação do RivaTuner Statistics Server falhou!"
+LangString RTSSCaption 		${LANG_PORTUGUESEBR} 	 "Instalação do RivaTuner Statistics Server ${VER_DISPLAY}"
+LangString RTSSSameVersion	${LANG_PORTUGUESEBR} 	 "A mesma versão do RivaTuner Statistics Server já está instalada. Você deseja continuar a instalação assim mesmo?"
+LangString RTSSNewerVersion	${LANG_PORTUGUESEBR} 	 "A versão mais recente do RivaTuner Statistics Server já está instalada. Você deseja continuar a instalação assim mesmo?"
+LangString RTSSRebootInstall 	${LANG_PORTUGUESEBR}	 "Alguns arquivos do RivaTuner Statistics Server estão atualmente em uso e não podem ser atualizados agora, você deve reiniciar o computador para concluir a instalação. Deseja reiniciar agora?"
+LangString RTSSLocalization 	${LANG_PORTUGUESEBR} 	 "PTBR"

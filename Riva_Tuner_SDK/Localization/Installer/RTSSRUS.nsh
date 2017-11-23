@@ -1,0 +1,13 @@
+LicenseLangString RTSSLicense 	${LANG_RUSSIAN}		"RTSSRUS.lic"
+
+LangString RTSSActiveInstall 	${LANG_RUSSIAN} 	"RivaTuner Statistics Server активен в данный момент, процесс установки будет прерван!"
+LangString RTSSAbortInstall 	${LANG_RUSSIAN} 	"Невозможно установить RivaTuner Statistics Server!"
+LangString RTSSActiveUninstall 	${LANG_RUSSIAN}		"RivaTuner Statistics Server активен в данный момент, процесс удаления будет прерван!"
+LangString RTSSKeepSettings 	${LANG_RUSSIAN} 	"Вы хотите сохранить настройки RivaTuner Statistics Server? Ответьте ДА, если Вы удаляете предыдущую версию утилиты перед установкой новой."
+LangString RTSSRebootUninstall 	${LANG_RUSSIAN}		"Некоторые файлы RivaTuner Statistics Server в данный момент заблокированы и не могут быть удалены прямо сейчас, необходима перезагрузка системы для их полного удаления. Хотите перезагрузиться прямо сейчас?"
+LangString RTSSAbortUninstall 	${LANG_RUSSIAN} 	"Невозможно удалить RivaTuner Statistics Server!"
+LangString RTSSCaption 		${LANG_RUSSIAN} 	"Установка RivaTuner Statistics Server ${VER_DISPLAY}"
+LangString RTSSSameVersion	${LANG_RUSSIAN} 	"Эта же самая версия RivaTuner Statistics Server уже установлена. Вы хотите продолжить установку в любом случае?"
+LangString RTSSNewerVersion	${LANG_RUSSIAN} 	"Более новая версия RivaTuner Statistics Server уже установлена. Вы хотите продолжить установку в любом случае?"
+LangString RTSSRebootInstall 	${LANG_RUSSIAN}		"Некоторые файлы RivaTuner Statistics Server в данный момент заблокированы и не могут быть обновлены прямо сейчас, необходима перезагрузка системы для их обновления. Хотите перезагрузиться прямо сейчас?"
+LangString RTSSLocalization 	${LANG_RUSSIAN} 	"RUS"

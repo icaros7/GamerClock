@@ -1,0 +1,6 @@
+; QSV.def : Declares the module parameters for the DLL.
+
+LIBRARY      "QSV"
+DESCRIPTION  'QSV Windows Dynamic Link Library'
+
+EXPORTS

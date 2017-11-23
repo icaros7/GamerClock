@@ -1,0 +1,13 @@
+LicenseLangString RTSSLicense 	${LANG_SPANISH}		"RTSSSPA.lic"
+
+LangString RTSSActiveInstall 	${LANG_SPANISH} 	"¡RivaTuner Statistics Server está actualmente activo, el proceso de instalación será abortado!"
+LangString RTSSAbortInstall 	${LANG_SPANISH} 	"¡La instalación de RivaTuner Statistics Server falló!"
+LangString RTSSActiveUninstall 	${LANG_SPANISH}		"¡RivaTuner Statistics Server está actualmente activo, el proceso de desinstalación será abortado"
+LangString RTSSKeepSettings 	${LANG_SPANISH} 	"¿Quieres conservar tu configuración de RivaTuner Statistics Server? Haz click en Sí si estás desinstalando la utilidad antes de actualizar a una versión más reciente."
+LangString RTSSRebootUninstall 	${LANG_SPANISH}		"Algunos archivos de RivaTuner Statistics Server están actualmente en uso y no pueden ser borrados en este momento, un reinicio es requerido para terminar el proceso de desinstalación y borrar estos archivos. Si estás actualizando RivaTuner Statistics Server, se recomienda fuertemente que se reinicie el equipo antes de instalar una nueva versión. ¿Deseas reiniciar el equipo ahora?"
+LangString RTSSAbortUninstall 	${LANG_SPANISH} 	"¡La desinstalación de RivaTuner Statistics Server falló!"
+LangString RTSSCaption 		${LANG_SPANISH} 	"RivaTuner Statistics Server ${VER_DISPLAY} Setup"
+LangString RTSSSameVersion	${LANG_SPANISH} 	"The same version of RivaTuner Statistics Server is already installed. Do you want to continue installation anyway?"
+LangString RTSSNewerVersion	${LANG_SPANISH} 	"Newer version of RivaTuner Statistics Server is already installed. Do you want to continue installation anyway?"
+LangString RTSSRebootInstall 	${LANG_SPANISH}		"Some RivaTuner Statistics Server files are currently in use and cannot be updated right now, reboot is required to finish the installation and update these files. Do you want to reboot now?"
+LangString RTSSLocalization 	${LANG_SPANISH} 	"SPA"

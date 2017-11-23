@@ -23,3 +23,16 @@ E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.xml
 E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.pdb
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Form2.resources
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Form3.resources
+E:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.exe.config
+E:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.exe
+E:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.pdb
+E:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.xml
+E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Form1.resources
+E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Form2.resources
+E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Form3.resources
+E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.Resources.resources
+E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.vbproj.GenerateResource.Cache
+E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.vbproj.CoreCompileInputs.cache
+E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.exe
+E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.xml
+E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.pdb

@@ -1,0 +1,13 @@
+LicenseLangString RTSSLicense 	${LANG_DUTCH}		"RTSSDUT.lic"
+
+LangString RTSSActiveInstall 	${LANG_DUTCH}	 	"RivaTuner Statistics Server is op dit ogenblik actief, het installatie proces wordt afgebroken!"
+LangString RTSSAbortInstall 	${LANG_DUTCH} 		"RivaTuner Statistics Server, installatie is niet uitgevoerd!"
+LangString RTSSActiveUninstall 	${LANG_DUTCH}		"RivaTuner Statistics Server is op dit ogenblik actief, het installatie proces wordt afgebroken!"
+LangString RTSSKeepSettings 	${LANG_DUTCH} 		"Wil je de huidige RivaTuner Statistics Server instellingen behouden? Antwoord JA als je de toepassing eerst wil verwijderen voor je een upgrade doet naar een nieuwe versie."
+LangString RTSSRebootUninstall 	${LANG_DUTCH}		"Sommige RivaTuner Statistics Server bestanden zijn op dit ogenblik in gebruik en kunnen niet verwijdert worden, een herstart van het systeem is vereist om deze bestanden te verwijderen en het verwijdering proces verder te zetten. Wil je nu je systeem opnieuw opstarten?"
+LangString RTSSAbortUninstall 	${LANG_DUTCH}	 	"RivaTuner Statistics Server, verwijdering is niet uitgevoerd!"
+LangString RTSSCaption 		${LANG_DUTCH} 		"RivaTuner Statistics Server ${VER_DISPLAY} Instelling (setup)"
+LangString RTSSSameVersion	${LANG_DUTCH} 		"The same version of RivaTuner Statistics Server is already installed. Do you want to continue installation anyway?"
+LangString RTSSNewerVersion	${LANG_DUTCH}	 	"Newer version of RivaTuner Statistics Server is already installed. Do you want to continue installation anyway?"
+LangString RTSSRebootInstall 	${LANG_DUTCH}		"Some RivaTuner Statistics Server files are currently in use and cannot be updated right now, reboot is required to finish the installation and update these files. Do you want to reboot now?"
+LangString RTSSLocalization 	${LANG_DUTCH} 		"DUT"
