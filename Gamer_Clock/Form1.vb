@@ -41,10 +41,11 @@ Public Class Form1
             End If
         Next
         'Secs.Items.Add("00")
-        'If Not ListBox1.FindString("RTSS.exe") <> -1 Then
-        '    MsgBox("RivaTuner Statistics Server가 감지되지 않습니다." + vbCrLf + "프로그램을 종료합니다.", vbCritical, "오류")
-        '    End
-        'End If
+        If Not ListBox1.FindString("RTSS.exe") <> -1 Then
+            MsgBox("RivaTuner Statistics Server가 감지되지 않습니다.", vbInformation, "안내")
+            RTSSHook.Checked = False
+            RTSSHook.Enabled = False
+        End If
         Hours.SelectedItem = DateTime.Now.ToString("HH")
         If DateTime.Now.ToString("mm") = 59 Then
             Mins.SelectedIndex = 0
@@ -72,20 +73,7 @@ Public Class Form1
 
                 If RTSSHook.Checked = True Then
                     '리바튜너
-                    Dim tmp As String
-                    If Processs.Text = "_윈도우 종료하기_" Then
-                        tmp = "Task=Shutdown Windows"
-                    Else
-                        tmp = "Task=kill " + Processs.Text
-                    End If
-                    Using writer As StreamWriter = New StreamWriter(Application.StartupPath + "\OSD.ini")
-                        writer.Write("[GamerClock]" & vbNewLine &
-                        "Set=" + Hours.Text + " : " + Mins.Text + " : " + Secs.Text & vbNewLine &
-                        tmp & vbNewLine &
-                        "Msg=" + TextBox1.Text
-                        )
-                    End Using
-                    Shell(Application.StartupPath + "\RTSS_Gamer_Clock.exe", AppWinStyle.Hide)
+                    Re_OSD_Click(sender, New System.EventArgs())
                 End If
             End If
 
@@ -235,11 +223,33 @@ Public Class Form1
         Form2.ShowDialog()
     End Sub
 
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
-        Form3.Show()
-    End Sub
+    Private Sub Re_OSD_Click(sender As Object, e As EventArgs) Handles Re_OSD.Click
+        '리바튜너
+        Shell("taskkill -f -im RTSS_Gamer_Clock.exe", AppWinStyle.Hide)
+        System.IO.File.Delete(Application.StartupPath + "\OSD.ini")
+        Dim tmp As String
+        If Processs.Text = "_윈도우 종료하기_" Then
+            tmp = "Task=Shutdown Windows"
+        Else
+            tmp = "Task=kill " + Processs.Text
+        End If
+        Using writer As StreamWriter = New StreamWriter(Application.StartupPath + "\OSD.ini")
+            writer.Write("[GamerClock]" & vbNewLine &
+            "Set=" + Hours.Text + " : " + Mins.Text + " : " + Secs.Text & vbNewLine &
+            tmp & vbNewLine &
+            "Msg=" + TextBox1.Text
+            )
+        End Using
+        'Shell(Application.StartupPath + "\RTSS_Gamer_Clock.exe", AppWinStyle.Hide)
+        Dim procStartInfo As New ProcessStartInfo
+        Dim procExecuting As New Process
+        With procStartInfo
+            .UseShellExecute = True
+            .FileName = Application.StartupPath + "\RTSS_Gamer_Clock.exe"
+            .WindowStyle = ProcessWindowStyle.Minimized
+            .Verb = "runas"
+        End With
 
-    Private Sub ContextMenuStrip1_Opening(sender As Object, e As CancelEventArgs) Handles ContextMenuStrip1.Opening
-
+        procExecuting = Process.Start(procStartInfo)
     End Sub
 End Class

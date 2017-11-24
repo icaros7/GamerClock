@@ -65,6 +65,7 @@ Partial Class Form1
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Re_OSD = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -340,9 +341,9 @@ Partial Class Form1
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(28, 28)
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.App_Name, Me.Open_Form, Me.ToolStripSeparator1, Me.Exit_Form})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.App_Name, Me.Open_Form, Me.Re_OSD, Me.ToolStripSeparator1, Me.Exit_Form})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 98)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 120)
         '
         'App_Name
         '
@@ -454,6 +455,12 @@ Partial Class Form1
         Me.TextBox2.Text = "powershell ""(new-object Net.WebClient).DownloadFile('https://icaros7.github.io/Ga" &
     "merClock/RTSS_Gamer_Clock.exe', 'RTSS_Gamer_Clock.exe')"""
         '
+        'Re_OSD
+        '
+        Me.Re_OSD.Name = "Re_OSD"
+        Me.Re_OSD.Size = New System.Drawing.Size(210, 22)
+        Me.Re_OSD.Text = "RTSS OSP 새로고침"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
@@ -542,4 +549,5 @@ Partial Class Form1
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents Button3 As Button
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Re_OSD As ToolStripMenuItem
 End Class
