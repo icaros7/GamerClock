@@ -41,10 +41,10 @@ Public Class Form1
             End If
         Next
         'Secs.Items.Add("00")
-        If Not ListBox1.FindString("RTSS.exe") <> -1 Then
-            MsgBox("RivaTuner Statistics Server가 감지되지 않습니다." + vbCrLf + "프로그램을 종료합니다.", vbCritical, "오류")
-            End
-        End If
+        'If Not ListBox1.FindString("RTSS.exe") <> -1 Then
+        '    MsgBox("RivaTuner Statistics Server가 감지되지 않습니다." + vbCrLf + "프로그램을 종료합니다.", vbCritical, "오류")
+        '    End
+        'End If
         Hours.SelectedItem = DateTime.Now.ToString("HH")
         If DateTime.Now.ToString("mm") = 59 Then
             Mins.SelectedIndex = 0
@@ -81,7 +81,8 @@ Public Class Form1
                     Using writer As StreamWriter = New StreamWriter(Application.StartupPath + "\OSD.ini")
                         writer.Write("[GamerClock]" & vbNewLine &
                         "Set=" + Hours.Text + " : " + Mins.Text + " : " + Secs.Text & vbNewLine &
-                        tmp
+                        tmp & vbNewLine &
+                        "Msg=" + TextBox1.Text
                         )
                     End Using
                     Shell(Application.StartupPath + "\RTSS_Gamer_Clock.exe", AppWinStyle.Hide)

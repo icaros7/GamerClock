@@ -246,9 +246,9 @@ Partial Class Form1
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(15, 52)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(49, 12)
+        Me.Label8.Size = New System.Drawing.Size(231, 12)
         Me.Label8.TabIndex = 5
-        Me.Label8.Text = "메시지 :"
+        Me.Label8.Text = "메시지 (RTSS 사용시 한국어 깨짐 주의) :"
         '
         'CopyLeft
         '
