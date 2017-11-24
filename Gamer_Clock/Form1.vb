@@ -178,9 +178,9 @@ Public Class Form1
                 Shell("taskkill -f -im " + Processs.Text, AppWinStyle.Hide)
                 MsgBox("지정하신 시간이 다 되어 " + Processs.Text + "가 종료되었습니다." + vbCrLf + vbCrLf + "메시지 : " + TextBox1.Text, vbInformation, "안내")
             End If
-            Timer2.Enabled = False
-            Shell("taskkill -f -im RTSS_Gamer_Clock.exe")
+            Shell("taskkill -f -im RTSS_Gamer_Clock.exe", AppWinStyle.Hide)
             System.IO.File.Delete(Application.StartupPath + "\OSD.ini")
+            Timer2.Enabled = False
         End If
     End Sub
 
