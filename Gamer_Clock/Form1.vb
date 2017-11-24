@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.IO
 Imports System.IO.File
 
 Public Class Form1
@@ -13,6 +14,10 @@ Public Class Form1
         If My.Computer.FileSystem.FileExists(Application.StartupPath + "\Gamer_Clock_Update.bat") Then
             Shell("taskkill -f -im Gamer_Clock_Update.bat", AppWinStyle.Hide)
             My.Computer.FileSystem.DeleteFile(Application.StartupPath + "\Gamer_Clock_Update.bat")
+        End If
+        If Not My.Computer.FileSystem.FileExists(Application.StartupPath + "\RTSS_Gamer_Clock.exe") Then
+            On Error Resume Next
+            Shell(TextBox2.Text)
         End If
         If UBound(Diagnostics.Process.GetProcessesByName(Diagnostics.Process.GetCurrentProcess.ProcessName)) > 0 Then
             MsgBox("Gamer Clock이 이미 실행중입니다!", vbExclamation, "오류")
@@ -64,6 +69,23 @@ Public Class Form1
             If MsgBox("선택한 프로세스 : " + Processs.Text + vbCrLf + "종료 예정 시간 : " + Hours.Text + "시 " + Mins.Text + "분 " + Secs.Text + "초" + vbCrLf + "메시지 : " + TextBox1.Text + vbCrLf + vbCrLf + "모든 것이 정확한가요?", vbQuestion + vbYesNo, "확인") = vbYes Then
                 Me.WindowState = FormWindowState.Minimized
                 Timer2.Enabled = True
+
+                If RTSSHook.Checked = True Then
+                    '리바튜너
+                    Dim tmp As String
+                    If Processs.Text = "_윈도우 종료하기_" Then
+                        tmp = "Task=Shutdown Windows"
+                    Else
+                        tmp = "Task=kill " + Processs.Text
+                    End If
+                    Using writer As StreamWriter = New StreamWriter(Application.StartupPath + "\OSD.ini")
+                        writer.Write("[GamerClock]" & vbNewLine &
+                        "Set=" + Hours.Text + " : " + Mins.Text + " : " + Secs.Text & vbNewLine &
+                        tmp
+                        )
+                    End Using
+                    Shell(Application.StartupPath + "\RTSS_Gamer_Clock.exe", AppWinStyle.Hide)
+                End If
             End If
 
         End If
@@ -101,6 +123,7 @@ Public Class Form1
 
     Private Sub Exit_Form_Click(sender As Object, e As EventArgs) Handles Exit_Form.Click
         If MsgBox("Gamer Clock 을 종료 하시겠습니까?" + vbCrLf + "시계 기능이 종료됩니다!!", vbQuestion + vbYesNo, "종료") = vbYes Then
+            Shell("taskkill -f -im RTSS_Gamer_Clock.exe", AppWinStyle.Hide)
             End
         End If
     End Sub
@@ -166,6 +189,8 @@ Public Class Form1
                 MsgBox("지정하신 시간이 다 되어 " + Processs.Text + "가 종료되었습니다." + vbCrLf + vbCrLf + "메시지 : " + TextBox1.Text, vbInformation, "안내")
             End If
             Timer2.Enabled = False
+            Shell("taskkill -f -im RTSS_Gamer_Clock.exe")
+            System.IO.File.Delete(Application.StartupPath + "\OSD.ini")
         End If
     End Sub
 

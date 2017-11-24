@@ -37,3 +37,4 @@ E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.vbproj.CoreCompile
 E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.exe
 E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.xml
 E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.pdb
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Release\Gamer_Clock.vbprojResolveAssemblyReference.cache

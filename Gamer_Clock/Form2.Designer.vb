@@ -66,7 +66,7 @@ Partial Class Form2
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(249, 24)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "여러개의 모니터를 사용하는 경우 프로그램과" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "OSD가 실행될 모니터를 설정 합니다."
+        Me.Label1.Text = "여러개의 모니터를 사용하는 경우 프로그램이" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "실행될 모니터를 설정 합니다."
         '
         'Cancel_btn
         '

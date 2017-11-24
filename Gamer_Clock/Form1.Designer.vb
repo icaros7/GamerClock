@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form은 Dispose를 재정의하여 구성 요소 목록을 정리합니다.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     '참고: 다음 프로시저는 Windows Form 디자이너에 필요합니다.
     '수정하려면 Windows Form 디자이너를 사용하십시오.  
     '코드 편집기에서는 수정하지 마세요.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
@@ -64,6 +64,7 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -372,6 +373,7 @@ Partial Class Form1
         'AOC
         '
         Me.AOC.AutoSize = True
+        Me.AOC.Enabled = False
         Me.AOC.Location = New System.Drawing.Point(11, 471)
         Me.AOC.Name = "AOC"
         Me.AOC.Size = New System.Drawing.Size(126, 16)
@@ -382,7 +384,8 @@ Partial Class Form1
         'RTSSHook
         '
         Me.RTSSHook.AutoSize = True
-        Me.RTSSHook.Enabled = False
+        Me.RTSSHook.Checked = True
+        Me.RTSSHook.CheckState = System.Windows.Forms.CheckState.Checked
         Me.RTSSHook.Location = New System.Drawing.Point(141, 470)
         Me.RTSSHook.Name = "RTSSHook"
         Me.RTSSHook.Size = New System.Drawing.Size(170, 16)
@@ -417,7 +420,7 @@ Partial Class Form1
         Me.Button2.Location = New System.Drawing.Point(250, 446)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(60, 19)
+        Me.Button2.Size = New System.Drawing.Size(60, 22)
         Me.Button2.TabIndex = 15
         Me.Button2.Text = "검색"
         Me.Button2.UseVisualStyleBackColor = True
@@ -442,11 +445,21 @@ Partial Class Form1
         Me.Button3.Text = "옵션"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(397, 180)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(54, 21)
+        Me.TextBox2.TabIndex = 18
+        Me.TextBox2.Text = "powershell ""(new-object Net.WebClient).DownloadFile('https://icaros7.github.io/Ga" &
+    "merClock/RTSS_Gamer_Clock.exe', 'RTSS_Gamer_Clock.exe')"""
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(318, 535)
+        Me.ClientSize = New System.Drawing.Size(320, 535)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.Button2)
@@ -528,4 +541,5 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents Button3 As Button
+    Friend WithEvents TextBox2 As TextBox
 End Class
