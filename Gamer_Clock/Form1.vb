@@ -133,6 +133,7 @@ Public Class Form1
         If MsgBox("알림 기능을 중지하고, 메인화면으로 돌아가시겠습니까?", vbQuestion + vbYesNo, "보이기") = vbYes Then
             Me.WindowState = FormWindowState.Normal
             Timer2.Enabled = False
+            Shell("taskkill -f -im RTSS_Gamer_Clock.exe", AppWinStyle.Hide)
         End If
     End Sub
 
@@ -236,5 +237,9 @@ Public Class Form1
 
     Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
         Form3.Show()
+    End Sub
+
+    Private Sub ContextMenuStrip1_Opening(sender As Object, e As CancelEventArgs) Handles ContextMenuStrip1.Opening
+
     End Sub
 End Class
