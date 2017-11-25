@@ -63,7 +63,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If Processs.Text = "종료할 프로세스를 선택" Or Processs.Text = "_더블클릭 시 새로고침_" Then
+        If Processs.Text = "종료할 프로세스를 선택" Or Processs.Text = "_더블클릭 시 새로고침_" Or Processs.Text = "종료할 프로세스를 입력" Then
             MsgBox("종료할 프로세스를 선택해주세요!!", vbCritical, "오류")
         Else
 
@@ -259,5 +259,64 @@ Public Class Form1
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Form3.ShowDialog()
+    End Sub
+
+    '/////////////////////////////////////////////////////////////
+    '와일드 카드 2개 사용 가능한 오류 있음
+    '꼭 수정하기
+    '/////////////////////////////////////////////////////////////
+    Private Function CheckPro(ByVal input As String)
+        Dim legth As Integer = input.Length - 1
+        If legth < 0 Then
+            MsgBox("프로세스 명을 입력해주세요!", vbCritical, "오류")
+            Return False
+        End If
+        Dim i As Integer
+        Dim cnt As Boolean = False
+        For i = 0 To legth Step 1
+            If input(0) = "*" Then
+                MsgBox("와일드카드(*)는 첫 글자로 사용 할수 없습니다!", vbCritical, "오류")
+                Return False
+            ElseIf input(i) = "*" Then
+                If cnt = False Then
+                    cnt = True
+                Else
+                    MsgBox("와일드카드(*)는 하나만 사용 가능합니다!", vbCritical, "오류")
+                    Return False
+                End If
+            ElseIf i = legth And cnt = False Then
+                MsgBox("와일드카드(*)를 입력해 주세요!", vbCritical, "오류")
+                Return False
+            ElseIf Not input(legth) = "*" Then
+                MsgBox("와일드카드(*)는 끝에만 사용 가능합니다!", vbCritical, "오류")
+                Return False
+            Else Return True
+            End If
+        Next
+        Return False
+    End Function
+
+    Private Sub UseWild_CheckedChanged(sender As Object, e As EventArgs) Handles UseWild.CheckedChanged
+        If UseWild.Checked = True Then
+            Processs.Text = "종료할 프로세스를 입력"
+            Dim inputvalue As String
+            Do
+                inputvalue = InputBox("와일드카드(*)를 사용하여 여러개의 프로세스를 한번에 종료 할 수 있습니다." + vbCrLf + "와일드카드는 정해지지 않은 문자 입니다." + vbCrLf + vbCrLf + "예를 들어 ""notepa*""를 입력시 아래와 같은 프로세스가 " + vbCrLf + "종료 됩니다." + vbCrLf + vbCrLf + "notepad.exe / notepad.jpg / notepaasdf.exe 등" + vbCrLf + """notepa""라는 이름으로 시작하는 모든 프로세스를 종료합니다.", "와일드카드(*) 사용", "")
+            Loop Until CheckPro(inputvalue) = True
+            Processs.Text = inputvalue
+            ListBox1.Enabled = False
+            Label10.Enabled = False
+            search.Enabled = False
+            Button2.Enabled = False
+        Else
+CancelCall:
+            Processs.Text = "종료할 프로세스를 선택"
+            ListBox1.Enabled = True
+            ListBox1_DoubleClick(sender, New System.EventArgs())
+            ListBox1.SelectedIndex = 0
+            Label10.Enabled = True
+            search.Enabled = True
+            Button2.Enabled = True
+        End If
     End Sub
 End Class

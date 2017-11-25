@@ -37,3 +37,8 @@ E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.exe
 E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.xml
 E:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.pdb
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.vbprojResolveAssemblyReference.cache
+G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.exe.manifest
+G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.application
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.TrustInfo.xml
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.exe.manifest
+G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.application

@@ -57,7 +57,7 @@ Partial Class Form1
         Me.Re_OSD = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.Exit_Form = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AOC = New System.Windows.Forms.CheckBox()
+        Me.UseWild = New System.Windows.Forms.CheckBox()
         Me.RTSSHook = New System.Windows.Forms.CheckBox()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.search = New System.Windows.Forms.TextBox()
@@ -378,16 +378,15 @@ Partial Class Form1
         Me.Exit_Form.Size = New System.Drawing.Size(210, 22)
         Me.Exit_Form.Text = "종료"
         '
-        'AOC
+        'UseWild
         '
-        Me.AOC.AutoSize = True
-        Me.AOC.Enabled = False
-        Me.AOC.Location = New System.Drawing.Point(11, 471)
-        Me.AOC.Name = "AOC"
-        Me.AOC.Size = New System.Drawing.Size(126, 16)
-        Me.AOC.TabIndex = 11
-        Me.AOC.Text = "Always-On-Clock"
-        Me.AOC.UseVisualStyleBackColor = True
+        Me.UseWild.AutoSize = True
+        Me.UseWild.Location = New System.Drawing.Point(11, 471)
+        Me.UseWild.Name = "UseWild"
+        Me.UseWild.Size = New System.Drawing.Size(128, 16)
+        Me.UseWild.TabIndex = 11
+        Me.UseWild.Text = "와일드카드(*) 사용"
+        Me.UseWild.UseVisualStyleBackColor = True
         '
         'RTSSHook
         '
@@ -475,7 +474,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(320, 535)
+        Me.ClientSize = New System.Drawing.Size(320, 530)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Button3)
@@ -484,7 +483,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.search)
         Me.Controls.Add(Me.RTSSHook)
-        Me.Controls.Add(Me.AOC)
+        Me.Controls.Add(Me.UseWild)
         Me.Controls.Add(Me.Processs)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.ListBox1)
@@ -551,7 +550,7 @@ Partial Class Form1
     Friend WithEvents Exit_Form As ToolStripMenuItem
     Friend WithEvents Open_Form As ToolStripMenuItem
     Friend WithEvents App_Name As ToolStripMenuItem
-    Friend WithEvents AOC As CheckBox
+    Friend WithEvents UseWild As CheckBox
     Friend WithEvents RTSSHook As CheckBox
     Friend WithEvents Timer2 As Timer
     Friend WithEvents search As TextBox
