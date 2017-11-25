@@ -54,6 +54,7 @@ Partial Class Form1
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.App_Name = New System.Windows.Forms.ToolStripMenuItem()
         Me.Open_Form = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Re_OSD = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.Exit_Form = New System.Windows.Forms.ToolStripMenuItem()
         Me.AOC = New System.Windows.Forms.CheckBox()
@@ -65,7 +66,7 @@ Partial Class Form1
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Re_OSD = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -149,7 +150,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label3.Location = New System.Drawing.Point(82, 26)
+        Me.Label3.Location = New System.Drawing.Point(61, 26)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(21, 17)
         Me.Label3.TabIndex = 2
@@ -162,7 +163,7 @@ Partial Class Form1
         Me.Hours.FormattingEnabled = True
         Me.Hours.ImeMode = System.Windows.Forms.ImeMode.Off
         Me.Hours.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"})
-        Me.Hours.Location = New System.Drawing.Point(36, 20)
+        Me.Hours.Location = New System.Drawing.Point(15, 20)
         Me.Hours.Name = "Hours"
         Me.Hours.Size = New System.Drawing.Size(46, 28)
         Me.Hours.Sorted = True
@@ -172,7 +173,7 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label5.Location = New System.Drawing.Point(155, 26)
+        Me.Label5.Location = New System.Drawing.Point(134, 26)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(21, 17)
         Me.Label5.TabIndex = 2
@@ -184,7 +185,7 @@ Partial Class Form1
         Me.Mins.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Mins.FormattingEnabled = True
         Me.Mins.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.Mins.Location = New System.Drawing.Point(109, 20)
+        Me.Mins.Location = New System.Drawing.Point(88, 20)
         Me.Mins.Name = "Mins"
         Me.Mins.Size = New System.Drawing.Size(46, 28)
         Me.Mins.TabIndex = 3
@@ -193,7 +194,7 @@ Partial Class Form1
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label7.Location = New System.Drawing.Point(228, 26)
+        Me.Label7.Location = New System.Drawing.Point(207, 26)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(21, 17)
         Me.Label7.TabIndex = 2
@@ -205,7 +206,7 @@ Partial Class Form1
         Me.Secs.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Secs.FormattingEnabled = True
         Me.Secs.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.Secs.Location = New System.Drawing.Point(182, 20)
+        Me.Secs.Location = New System.Drawing.Point(161, 20)
         Me.Secs.Name = "Secs"
         Me.Secs.Size = New System.Drawing.Size(46, 28)
         Me.Secs.Sorted = True
@@ -221,7 +222,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Location = New System.Drawing.Point(14, 124)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(295, 67)
+        Me.GroupBox1.Size = New System.Drawing.Size(234, 67)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "종료 예정 시간"
@@ -343,7 +344,7 @@ Partial Class Form1
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(28, 28)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.App_Name, Me.Open_Form, Me.Re_OSD, Me.ToolStripSeparator1, Me.Exit_Form})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 120)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 98)
         '
         'App_Name
         '
@@ -358,6 +359,12 @@ Partial Class Form1
         Me.Open_Form.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
         Me.Open_Form.Size = New System.Drawing.Size(210, 22)
         Me.Open_Form.Text = "보이기"
+        '
+        'Re_OSD
+        '
+        Me.Re_OSD.Name = "Re_OSD"
+        Me.Re_OSD.Size = New System.Drawing.Size(210, 22)
+        Me.Re_OSD.Text = "RTSS OSP 새로고침"
         '
         'ToolStripSeparator1
         '
@@ -455,17 +462,21 @@ Partial Class Form1
         Me.TextBox2.Text = "powershell ""(new-object Net.WebClient).DownloadFile('https://icaros7.github.io/Ga" &
     "merClock/RTSS_Gamer_Clock.exe', 'RTSS_Gamer_Clock.exe')"""
         '
-        'Re_OSD
+        'Button4
         '
-        Me.Re_OSD.Name = "Re_OSD"
-        Me.Re_OSD.Size = New System.Drawing.Size(210, 22)
-        Me.Re_OSD.Text = "RTSS OSP 새로고침"
+        Me.Button4.Location = New System.Drawing.Point(254, 131)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(57, 60)
+        Me.Button4.TabIndex = 19
+        Me.Button4.Text = "도움말"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(320, 535)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ListBox2)
@@ -550,4 +561,5 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Re_OSD As ToolStripMenuItem
+    Friend WithEvents Button4 As Button
 End Class

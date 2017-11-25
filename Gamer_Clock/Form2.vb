@@ -32,11 +32,13 @@ Public Class Form2
         Do Until i = Cnt + 1
             If i = 1 Then
                 MonitorNum.Items.Add("1 (기본값)")
+                GoTo End_Of_Loop
             Else
                 MonitorNum.Items.Add(i)
+                i += 1
             End If
-            i += 1
         Loop
+End_Of_Loop:
         MonitorNum.SelectedIndex = My.Settings.Main_Monitor - 1
         If My.Settings.MultiMonitor_config = True Then
             MultiMonitor_check.Checked = True

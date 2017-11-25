@@ -252,4 +252,12 @@ Public Class Form1
 
         procExecuting = Process.Start(procStartInfo)
     End Sub
+
+    Private Sub search_TextChanged(sender As Object, e As EventArgs) Handles search.TextChanged
+        Button2_Click(sender, New System.EventArgs())
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Form3.ShowDialog()
+    End Sub
 End Class
