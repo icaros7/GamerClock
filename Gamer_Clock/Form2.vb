@@ -2,6 +2,32 @@
 Imports System.Net
 Imports System.Text
 Imports System.Reflection
+Imports System.ComponentModel
+
+'버그 목록
+
+'- 단일 모니터 사용시 옵션창 값 2개뜸
+
+Public Class CloseButton '닫기 버튼 비활성화
+    Private Declare Function GetSystemMenu Lib "user32" (ByVal hwnd As Integer, ByVal revert As Integer) As Integer
+    Private Declare Function EnableMenuItem Lib "user32" (ByVal menu As Integer, ByVal ideEnableItem As Integer, ByVal enable As Integer) As Integer
+    Private Const SC_CLOSE As Integer = &HF060
+    Private Const MF_BYCOMMAND As Integer = &H0
+    Private Const MF_GRAYED As Integer = &H1
+    Private Const MF_ENABLED As Integer = &H0
+    Private Sub New()
+    End Sub
+
+    Public Shared Sub Disable(ByVal form As System.Windows.Forms.Form)
+        Select Case EnableMenuItem(GetSystemMenu(form.Handle.ToInt32, 0), SC_CLOSE, MF_BYCOMMAND Or MF_GRAYED)
+            Case MF_ENABLED
+            Case MF_GRAYED
+            Case &HFFFFFFFF
+                Throw New Exception("The Close menu item does not exist.")
+            Case Else
+        End Select
+    End Sub
+End Class
 
 Public Class Form2
     Dim webReq As HttpWebRequest
@@ -26,19 +52,20 @@ Public Class Form2
     End Function
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CloseButton.Disable(Me)
         Me.Location = Screen.AllScreens(My.Settings.Main_Monitor - 1).Bounds.Location + New Point(Screen.AllScreens(My.Settings.Main_Monitor - 1).WorkingArea.Width / 2 - Me.Width / 2, Screen.AllScreens(My.Settings.Main_Monitor - 1).WorkingArea.Height / 2 - Me.Height / 2)
         Dim Cnt As Int32 = Screen.AllScreens.Length
         Dim i As Int32 = 1
         Do Until i = Cnt + 1
             If i = 1 Then
                 MonitorNum.Items.Add("1 (기본값)")
-                GoTo End_Of_Loop
+                i += 1
+                Exit Do
             Else
                 MonitorNum.Items.Add(i)
                 i += 1
             End If
         Loop
-End_Of_Loop:
         MonitorNum.SelectedIndex = My.Settings.Main_Monitor - 1
         If My.Settings.MultiMonitor_config = True Then
             MultiMonitor_check.Checked = True
@@ -133,6 +160,7 @@ End_Of_Loop:
                 Exit Sub
             End If
         End If
+        Exit Sub
 
 UpdateError:
         If MsgBox("알 수 없는 오류입니다! 다시시도 하시겠습니까?", vbCritical + vbYesNo, "중대한 에러") = vbYes Then

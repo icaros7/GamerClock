@@ -60,7 +60,7 @@ Partial Class Form1
         Me.UseWild = New System.Windows.Forms.CheckBox()
         Me.RTSSHook = New System.Windows.Forms.CheckBox()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.search = New System.Windows.Forms.TextBox()
+        Me.SearchBox = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
@@ -404,13 +404,13 @@ Partial Class Form1
         '
         Me.Timer2.Interval = 1000
         '
-        'search
+        'SearchBox
         '
-        Me.search.Location = New System.Drawing.Point(115, 447)
-        Me.search.Margin = New System.Windows.Forms.Padding(2)
-        Me.search.Name = "search"
-        Me.search.Size = New System.Drawing.Size(133, 21)
-        Me.search.TabIndex = 13
+        Me.SearchBox.Location = New System.Drawing.Point(115, 447)
+        Me.SearchBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.SearchBox.Name = "SearchBox"
+        Me.SearchBox.Size = New System.Drawing.Size(196, 21)
+        Me.SearchBox.TabIndex = 13
         '
         'Label10
         '
@@ -424,7 +424,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(250, 446)
+        Me.Button2.Location = New System.Drawing.Point(397, 350)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(60, 22)
@@ -474,14 +474,14 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(320, 530)
+        Me.ClientSize = New System.Drawing.Size(319, 530)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.search)
+        Me.Controls.Add(Me.SearchBox)
         Me.Controls.Add(Me.RTSSHook)
         Me.Controls.Add(Me.UseWild)
         Me.Controls.Add(Me.Processs)
@@ -553,7 +553,7 @@ Partial Class Form1
     Friend WithEvents UseWild As CheckBox
     Friend WithEvents RTSSHook As CheckBox
     Friend WithEvents Timer2 As Timer
-    Friend WithEvents search As TextBox
+    Friend WithEvents SearchBox As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents ListBox2 As ListBox

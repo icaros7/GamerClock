@@ -94,7 +94,8 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Gamer_Clock_1_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -132,9 +133,7 @@
     <Compile Include="Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Form2.vb" />
     <Compile Include="Form3.Designer.vb">
       <DependentUpon>Form3.vb</DependentUpon>
     </Compile>
@@ -176,7 +175,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Gamer_Clock_1_TemporaryKey.pfx" />
     <None Include="Gamer_Clock_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest">
       <SubType>Designer</SubType>

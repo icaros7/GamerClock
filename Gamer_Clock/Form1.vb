@@ -56,7 +56,7 @@ Public Class Form1
         Secs.SelectedIndex = 0
         TextBox1.Text = My.Settings.Save_Msg
         If My.Settings.Auto_Search_config = True Then
-            search.Text = My.Settings.Auto_Search
+            SearchBox.Text = My.Settings.Auto_Search
             Button2_Click(sender, New System.EventArgs())
         End If
         ListBox1.SelectedIndex = 0
@@ -196,20 +196,20 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If search.Text = "" Then
+        If SearchBox.Text = "" Then
             ListBox1_DoubleClick(sender, New System.EventArgs())
         Else
             ListBox1.Items.Clear()
             ListBox1.Items.Add("_더블클릭 시 새로고침_")
             For i As Integer = 0 To ListBox2.Items.Count - 1
-                If ListBox2.Items(i).ToLower.StartsWith(Me.search.Text.Trim.ToLower) Then
+                If ListBox2.Items(i).ToLower.StartsWith(Me.SearchBox.Text.Trim.ToLower) Then
                     ListBox1.Items.Add(ListBox2.Items(i))
                 End If
             Next
         End If
     End Sub
 
-    Private Sub search_KeyDown(sender As Object, e As KeyEventArgs) Handles search.KeyDown
+    Private Sub search_KeyDown(sender As Object, e As KeyEventArgs) Handles SearchBox.KeyDown
         If e.KeyCode = Keys.Return Then
             Button2_Click(sender, New System.EventArgs())
         End If
@@ -240,7 +240,7 @@ Public Class Form1
             "Msg=" + TextBox1.Text
             )
         End Using
-        'Shell(Application.StartupPath + "\RTSS_Gamer_Clock.exe", AppWinStyle.Hide)
+        'Shell(Application.StartupPath + "\RTSS_Gamer_Clock.exe", AppWinStyle.Hide) '관리자 권한 실행 요구
         Dim procStartInfo As New ProcessStartInfo
         Dim procExecuting As New Process
         With procStartInfo
@@ -253,7 +253,7 @@ Public Class Form1
         procExecuting = Process.Start(procStartInfo)
     End Sub
 
-    Private Sub search_TextChanged(sender As Object, e As EventArgs) Handles search.TextChanged
+    Private Sub search_TextChanged(sender As Object, e As EventArgs) Handles SearchBox.TextChanged
         Button2_Click(sender, New System.EventArgs())
     End Sub
 
@@ -261,39 +261,30 @@ Public Class Form1
         Form3.ShowDialog()
     End Sub
 
-    '/////////////////////////////////////////////////////////////
-    '와일드 카드 2개 사용 가능한 오류 있음
-    '꼭 수정하기
-    '/////////////////////////////////////////////////////////////
     Private Function CheckPro(ByVal input As String)
         Dim legth As Integer = input.Length - 1
-        If legth < 0 Then
-            MsgBox("프로세스 명을 입력해주세요!", vbCritical, "오류")
-            Return False
-        End If
         Dim i As Integer
         Dim cnt As Boolean = False
         For i = 0 To legth Step 1
-            If input(0) = "*" Then
-                MsgBox("와일드카드(*)는 첫 글자로 사용 할수 없습니다!", vbCritical, "오류")
-                Return False
-            ElseIf input(i) = "*" Then
-                If cnt = False Then
-                    cnt = True
-                Else
-                    MsgBox("와일드카드(*)는 하나만 사용 가능합니다!", vbCritical, "오류")
+            If input(i) = "*" Then
+                If i = 0 Then
+                    MsgBox("와일드카드(*)는 첫 문자로 올 수 없습니다!", vbCritical, "오류")
                     Return False
+                Else
+                    If cnt = True Then
+                        MsgBox("와일드카드(*)는 하나만 사용할 수 있습니다!", vbCritical, "오류")
+                        Return False
+                    Else
+                        cnt = True
+                    End If
                 End If
-            ElseIf i = legth And cnt = False Then
-                MsgBox("와일드카드(*)를 입력해 주세요!", vbCritical, "오류")
-                Return False
-            ElseIf Not input(legth) = "*" Then
-                MsgBox("와일드카드(*)는 끝에만 사용 가능합니다!", vbCritical, "오류")
-                Return False
-            Else Return True
             End If
         Next
-        Return False
+        If Not input(legth) = "*" Then
+            MsgBox("와일드카드(*)는 끝 문자로만 올 수 있습니다!", vbCritical, "오류")
+            Return False
+        End If
+        Return True
     End Function
 
     Private Sub UseWild_CheckedChanged(sender As Object, e As EventArgs) Handles UseWild.CheckedChanged
@@ -301,21 +292,25 @@ Public Class Form1
             Processs.Text = "종료할 프로세스를 입력"
             Dim inputvalue As String
             Do
-                inputvalue = InputBox("와일드카드(*)를 사용하여 여러개의 프로세스를 한번에 종료 할 수 있습니다." + vbCrLf + "와일드카드는 정해지지 않은 문자 입니다." + vbCrLf + vbCrLf + "예를 들어 ""notepa*""를 입력시 아래와 같은 프로세스가 " + vbCrLf + "종료 됩니다." + vbCrLf + vbCrLf + "notepad.exe / notepad.jpg / notepaasdf.exe 등" + vbCrLf + """notepa""라는 이름으로 시작하는 모든 프로세스를 종료합니다.", "와일드카드(*) 사용", "")
+                inputvalue = InputBox("와일드카드(*)를 사용하여 여러개의 프로세스를 한번에 종료 할 수 있습니다." + vbCrLf + "와일드카드(*)는 정해지지 않은 문자 입니다." + vbCrLf + vbCrLf + "예를 들어 ""notepa*""를 입력시 아래와 같은 프로세스가 " + vbCrLf + "종료 됩니다." + vbCrLf + vbCrLf + "notepad.exe / notepad.jpg / notepaasdf.exe 등" + vbCrLf + """notepa""라는 이름으로 시작하는 모든 프로세스를 종료합니다.", "와일드카드(*) 사용", "")
+                If inputvalue.Length < 2 Then
+                    GoTo CancelCall
+                End If
             Loop Until CheckPro(inputvalue) = True
             Processs.Text = inputvalue
             ListBox1.Enabled = False
             Label10.Enabled = False
-            search.Enabled = False
+            SearchBox.Enabled = False
             Button2.Enabled = False
         Else
 CancelCall:
+            UseWild.Checked = False
             Processs.Text = "종료할 프로세스를 선택"
             ListBox1.Enabled = True
             ListBox1_DoubleClick(sender, New System.EventArgs())
             ListBox1.SelectedIndex = 0
             Label10.Enabled = True
-            search.Enabled = True
+            SearchBox.Enabled = True
             Button2.Enabled = True
         End If
     End Sub

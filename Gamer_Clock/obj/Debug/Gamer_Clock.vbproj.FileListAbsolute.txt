@@ -42,3 +42,10 @@ G:\VS_Project\Gamer_Clock\Gamer_Clock\bin\Debug\Gamer_Clock.application
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.TrustInfo.xml
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.exe.manifest
 G:\VS_Project\Gamer_Clock\Gamer_Clock\obj\Debug\Gamer_Clock.application
+E:\VisualStudio\GamerClock\Gamer_Clock\bin\Debug\Gamer_Clock.exe.manifest
+E:\VisualStudio\GamerClock\Gamer_Clock\bin\Debug\Gamer_Clock.application
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.Form3.resources
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.TrustInfo.xml
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.exe.manifest
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.application
+E:\VisualStudio\GamerClock\Gamer_Clock\obj\Debug\Gamer_Clock.CloseButton.resources

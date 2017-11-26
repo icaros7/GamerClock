@@ -4,7 +4,7 @@
   <description asmv2:iconFile="icon_256px.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Gamer_Clock" version="1.0.0.0" publicKeyToken="C6CE1C66C7F25753" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Gamer_Clock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="Gamer_Clock.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Gamer_Clock.exe" size="774944">
-      <assemblyIdentity name="Gamer_Clock" version="1.0.0.0" publicKeyToken="C6CE1C66C7F25753" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Gamer_Clock.exe" size="774144">
+      <assemblyIdentity name="Gamer_Clock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SoaazEZm0G+30dEP0p8pNfiMy+f4AYpWDNxzkpaZ4Ck=</dsig:DigestValue>
+        <dsig:DigestValue>RJBUHVRyk9rVhEs7SSPJKaq1nmHWu2TqQwRwlQpx7h8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
