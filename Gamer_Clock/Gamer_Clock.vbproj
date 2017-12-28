@@ -29,7 +29,7 @@
     <ProductName>Gamer Clock for OSD</ProductName>
     <PublisherName>iHomin</PublisherName>
     <SuiteName>Gamer Clock for OSD</SuiteName>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -78,11 +78,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>66D3F7174BA1E127DA5D30061D1DA212B323D712</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>4E9432420B7FF25CC32517E9FD75F08B0C07AC49</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>Gamer_Clock_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -175,6 +174,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Gamer_Clock_1_TemporaryKey.pfx" />
     <None Include="Gamer_Clock_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest">
       <SubType>Designer</SubType>

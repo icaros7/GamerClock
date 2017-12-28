@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Gamer_Clock.exe" size="774144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Gamer_Clock.exe" size="775136">
       <assemblyIdentity name="Gamer_Clock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RJBUHVRyk9rVhEs7SSPJKaq1nmHWu2TqQwRwlQpx7h8=</dsig:DigestValue>
+        <dsig:DigestValue>yXtIJyUNB0lGQzHhIydA/QcasF5wiiwmPC2M9hT9ZqQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
