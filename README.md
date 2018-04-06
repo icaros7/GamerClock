@@ -13,5 +13,5 @@ Features
 
 Support
 ---
-Website : <http://minnote.net>  
+Website : <http://dl.minnote.net>  
 Email : <hominlab@gmail.com>
