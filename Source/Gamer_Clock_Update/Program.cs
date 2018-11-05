@@ -18,6 +18,11 @@ namespace Gamer_Clock_Update
             {
                 if (System.IO.File.Exists("Gamer_Clock.exe"))
                 {
+                    foreach (var process in Process.GetProcessesByName("Gamer_Clock"))
+                    {
+                        process.Kill();
+                    }
+                    System.Threading.Thread.Sleep(1000);
                     System.IO.File.Delete("Gamer_Clock.exe");
                     WebClient we = new WebClient();
                     we.DownloadFile("https://raw.githubusercontent.com/icaros7/GamerClock/master/Gamer%20Clock/Gamer_Clock.exe", @"Gamer_Clock.exe");

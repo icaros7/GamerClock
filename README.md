@@ -1,4 +1,4 @@
-# Gamer Clock for OSD 1.0.0.2
+# Gamer Clock for OSD 1.0.0.3
 
 ## **English**
 ## Introduce
@@ -33,6 +33,9 @@ You can Update at "Option" Window. Just Click "Update" button. May be Gamer Cloc
 
 ## ChangeLog
 ---
+### 1.0.0.3
+- Fix can't update bug
+
 ### 1.0.0.2
 - Prepare for github release
 - Modified some URL for github release
@@ -78,6 +81,9 @@ Riva Turner 를 이용한 **게이머**를 위한 시계 입니다.
 
 ## 체인지로그
 ---
+### 1.0.0.3
+- 업데이트가 되지 않는 버그 수정
+
 ### 1.0.0.2
 - github 릴리즈를 위한 소소한 변경
 - github 릴리즈를 위한 배포 방식 변경으로 인한 일부 내부 URL 변경

@@ -1,10 +1,10 @@
-/source/Gamer_Clock/Gamer_Clock.csproj.user
-/source/Gamer_Clock/bin
-/source/Gamer_Clock/obj
-/source/Gamer_Clock/bld
-/source/Gamer_Clock/bin
+/source/**/**.csproj.user
+/source/**/bin
+/source/**/obj
+/source/**/bld
+/source/**/bin
 /source/packages
 /source/**/*.suo
 *.user
 *.log
-source/.vs/Gamer_Clock/*
+source/.vs/**/*
