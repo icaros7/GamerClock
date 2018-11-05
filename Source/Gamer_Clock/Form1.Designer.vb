@@ -172,7 +172,7 @@ Partial Class Form1
         Me.Hours.ImeMode = System.Windows.Forms.ImeMode.Off
         Me.Hours.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"})
         Me.Hours.Location = New System.Drawing.Point(21, 30)
-        Me.Hours.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Hours.Margin = New System.Windows.Forms.Padding(4)
         Me.Hours.Name = "Hours"
         Me.Hours.Size = New System.Drawing.Size(64, 39)
         Me.Hours.Sorted = True
@@ -196,7 +196,7 @@ Partial Class Form1
         Me.Mins.FormattingEnabled = True
         Me.Mins.ImeMode = System.Windows.Forms.ImeMode.Off
         Me.Mins.Location = New System.Drawing.Point(126, 30)
-        Me.Mins.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Mins.Margin = New System.Windows.Forms.Padding(4)
         Me.Mins.Name = "Mins"
         Me.Mins.Size = New System.Drawing.Size(64, 39)
         Me.Mins.TabIndex = 3
@@ -219,7 +219,7 @@ Partial Class Form1
         Me.Secs.FormattingEnabled = True
         Me.Secs.ImeMode = System.Windows.Forms.ImeMode.Off
         Me.Secs.Location = New System.Drawing.Point(230, 30)
-        Me.Secs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Secs.Margin = New System.Windows.Forms.Padding(4)
         Me.Secs.Name = "Secs"
         Me.Secs.Size = New System.Drawing.Size(64, 39)
         Me.Secs.Sorted = True
@@ -234,9 +234,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Hours)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Location = New System.Drawing.Point(20, 186)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(334, 100)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
@@ -245,7 +245,7 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(20, 105)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(423, 28)
         Me.TextBox1.TabIndex = 4
@@ -253,7 +253,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(281, 738)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(161, 46)
         Me.Button1.TabIndex = 5
@@ -286,7 +286,7 @@ Partial Class Form1
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Location = New System.Drawing.Point(17, 153)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(95, 22)
         Me.RadioButton1.TabIndex = 7
@@ -297,7 +297,7 @@ Partial Class Form1
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Location = New System.Drawing.Point(124, 153)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(103, 22)
         Me.RadioButton2.TabIndex = 7
@@ -308,7 +308,7 @@ Partial Class Form1
         '
         Me.RadioButton3.AutoSize = True
         Me.RadioButton3.Location = New System.Drawing.Point(231, 153)
-        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(103, 22)
         Me.RadioButton3.TabIndex = 7
@@ -320,7 +320,7 @@ Partial Class Form1
         Me.RadioButton4.AutoSize = True
         Me.RadioButton4.Checked = True
         Me.RadioButton4.Location = New System.Drawing.Point(339, 153)
-        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(87, 22)
         Me.RadioButton4.TabIndex = 7
@@ -333,7 +333,7 @@ Partial Class Form1
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 18
         Me.ListBox1.Location = New System.Drawing.Point(16, 338)
-        Me.ListBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ListBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(427, 328)
         Me.ListBox1.Sorted = True
@@ -408,7 +408,7 @@ Partial Class Form1
         '
         Me.UseWild.AutoSize = True
         Me.UseWild.Location = New System.Drawing.Point(16, 706)
-        Me.UseWild.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.UseWild.Margin = New System.Windows.Forms.Padding(4)
         Me.UseWild.Name = "UseWild"
         Me.UseWild.Size = New System.Drawing.Size(187, 22)
         Me.UseWild.TabIndex = 11
@@ -421,7 +421,7 @@ Partial Class Form1
         Me.RTSSHook.Checked = True
         Me.RTSSHook.CheckState = System.Windows.Forms.CheckState.Checked
         Me.RTSSHook.Location = New System.Drawing.Point(201, 705)
-        Me.RTSSHook.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RTSSHook.Margin = New System.Windows.Forms.Padding(4)
         Me.RTSSHook.Name = "RTSSHook"
         Me.RTSSHook.Size = New System.Drawing.Size(238, 22)
         Me.RTSSHook.TabIndex = 12
@@ -470,7 +470,7 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(213, 738)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(60, 46)
         Me.Button3.TabIndex = 17
@@ -480,17 +480,17 @@ Partial Class Form1
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(567, 270)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(75, 28)
         Me.TextBox2.TabIndex = 18
-        Me.TextBox2.Text = "powershell ""(new-object Net.WebClient).DownloadFile('https://icaros7.github.io/Ga" &
-    "merClock/RTSS_Gamer_Clock.exe', 'RTSS_Gamer_Clock.exe')"""
+        Me.TextBox2.Text = "powershell ""(new-object Net.WebClient).DownloadFile('https://github.com/icaros7/G" &
+    "amerClock/raw/master/Gamer%20Clock/Gamer_Clock.exe', 'RTSS_Gamer_Clock.exe')"""
         '
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(363, 196)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(81, 90)
         Me.Button4.TabIndex = 19
@@ -532,7 +532,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
