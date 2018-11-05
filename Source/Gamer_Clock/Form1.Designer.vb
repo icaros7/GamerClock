@@ -484,8 +484,9 @@ Partial Class Form1
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(75, 28)
         Me.TextBox2.TabIndex = 18
-        Me.TextBox2.Text = "powershell ""(new-object Net.WebClient).DownloadFile('https://github.com/icaros7/G" &
-    "amerClock/raw/master/Gamer%20Clock/Gamer_Clock.exe', 'RTSS_Gamer_Clock.exe')"""
+        Me.TextBox2.Text = "powershell ""(new-object Net.WebClient).DownloadFile('""https://raw.githubuserconte" &
+    "nt.com/icaros7/GamerClock/master/Gamer%20Clock/Gamer_Clock.exe', 'RTSS_Gamer_Clo" &
+    "ck.exe')"""
         '
         'Button4
         '

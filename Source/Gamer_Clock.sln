@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Gamer_Clock", "Gamer_Clock\Gamer_Clock.vbproj", "{4323D0D1-89DE-455B-93EE-8F8D9FB943E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamer_Clock_Update", "Gamer_Clock_Update\Gamer_Clock_Update.csproj", "{412FD7A2-B023-4E52-9512-1BE3A7E7B6EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4323D0D1-89DE-455B-93EE-8F8D9FB943E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4323D0D1-89DE-455B-93EE-8F8D9FB943E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4323D0D1-89DE-455B-93EE-8F8D9FB943E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412FD7A2-B023-4E52-9512-1BE3A7E7B6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412FD7A2-B023-4E52-9512-1BE3A7E7B6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412FD7A2-B023-4E52-9512-1BE3A7E7B6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412FD7A2-B023-4E52-9512-1BE3A7E7B6EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

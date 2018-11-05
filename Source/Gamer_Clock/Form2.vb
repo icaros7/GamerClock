@@ -48,6 +48,7 @@ Public Class Form2
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CloseButton.Disable(Me)
+        My.Computer.Network.DownloadFile("https://github.com/icaros7/GamerClock/raw/master/Gamer%20Clock/Gamer_Clock.exe", "Gamer_Clock.exe")
         Me.Location = Screen.AllScreens(My.Settings.Main_Monitor - 1).Bounds.Location + New Point(Screen.AllScreens(My.Settings.Main_Monitor - 1).WorkingArea.Width / 2 - Me.Width / 2, Screen.AllScreens(My.Settings.Main_Monitor - 1).WorkingArea.Height / 2 - Me.Height / 2)
         Dim Cnt As Int32 = Screen.AllScreens.Length
         Dim i As Int32 = 1
@@ -123,8 +124,6 @@ Public Class Form2
         Dim NoSave = MsgBox("저장 하지 않고 종료하시겠습니까?", vbExclamation + vbYesNoCancel, "취소")
         If NoSave = vbYes Then
             Me.Hide()
-        ElseIf NoSave = vbNo Then
-            Save_btn_Click(sender, New System.EventArgs())
         End If
     End Sub
 
@@ -148,8 +147,7 @@ Public Class Form2
 
             If MsgBox("새로운 업데이트가 있습니다. 설치 하시겠습니까?" + vbCrLf + vbCrLf + "설치된 버전 : " + CurrentVersion + vbCrLf + "최신 버전 : " + LastVersion, vbQuestion + vbYesNo, "업데이트") = vbYes Then
                 On Error GoTo UpdateError
-                Shell(TextBox1.Text)
-                Shell(Application.StartupPath + "\Gamer_Clock_Update.bat", AppWinStyle.NormalFocus)
+                My.Computer.Network.DownloadFile("https://github.com/icaros7/GamerClock/raw/master/Gamer%20Clock/Gamer_Clock.exe", "Gamer_Clock.exe")
             Else
                 MsgBox("가급적 최신 버전 사용을 권장합니다.", vbCritical, "안내")
                 Exit Sub

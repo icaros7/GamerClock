@@ -11,9 +11,8 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Computer.FileSystem.FileExists(Application.StartupPath + "\Gamer_Clock_Update.bat") Then
-            Shell("taskkill -f -im Gamer_Clock_Update.bat", AppWinStyle.Hide)
-            My.Computer.FileSystem.DeleteFile(Application.StartupPath + "\Gamer_Clock_Update.bat")
+        If My.Computer.FileSystem.FileExists(Application.StartupPath + "\Gamer_Clock_Update.exe") Then
+            Shell("taskkill -f -im Gamer_Clock_Update.exe", AppWinStyle.Hide)
         End If
         If Not My.Computer.FileSystem.FileExists(Application.StartupPath + "\RTSS_Gamer_Clock.exe") Then
             On Error Resume Next

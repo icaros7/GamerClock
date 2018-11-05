@@ -1,0 +1,7 @@
+E:\workspace\GamerClock\Source\Gamer_Clock_Update\bin\Release\Gamer_Clock_Update.exe.config
+E:\workspace\GamerClock\Source\Gamer_Clock_Update\bin\Release\Gamer_Clock_Update.exe
+E:\workspace\GamerClock\Source\Gamer_Clock_Update\bin\Release\Gamer_Clock_Update.pdb
+E:\workspace\GamerClock\Source\Gamer_Clock_Update\obj\Release\Gamer_Clock_Update.csproj.CoreCompileInputs.cache
+E:\workspace\GamerClock\Source\Gamer_Clock_Update\obj\Release\Gamer_Clock_Update.exe
+E:\workspace\GamerClock\Source\Gamer_Clock_Update\obj\Release\Gamer_Clock_Update.pdb
+E:\workspace\GamerClock\Source\Gamer_Clock_Update\obj\Release\Gamer_Clock_Update.csprojAssemblyReference.cache
